@@ -1,0 +1,146 @@
+.banner {
+    height: auto;
+    padding: 10px;
+    background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(83, 83, 83, 0.5)), url(../images/fondo.png);
+    background-position: bottom;
+}
+
+.banner img {
+    opacity: 0.5;
+}
+
+.contenido-banner {
+    padding: 3rem;
+}
+
+.titulo-banner {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'MedievalSharp', cursive;
+
+}
+
+.sub-banner {
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 500;
+}
+
+.parrafo-banner {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: light;
+    width: 60%;
+    line-height: 1.7rem;
+}
+
+.boton-promocion {
+    width: 140px;
+    border: 1px solid white;
+    background-color: transparent;
+    height: 40px;
+    margin-top: 2rem;
+}
+
+.boton-promocion:hover {
+    background-color: darkred;
+    border: none;
+}
+
+.boton-promocion a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 18px;
+    margin-top: -6px;
+}
+
+.boton-promocion a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+/* MEDIA */
+
+@media (min-width: 320px) and (max-width: 570px) {
+    .contenido-banner {
+        padding: .5rem;
+    }
+    
+    .titulo-banner {
+        font-size: 1.1rem;
+    
+    }
+    
+    .sub-banner {
+        font-size: .9rem;
+        margin-top: 16px;
+    }
+    
+    .parrafo-banner {
+        font-size: .7rem;
+        margin-top: 16px;
+        width: 100%;
+        line-height: .9rem;
+    }
+    
+    .boton-promocion {
+        width: 30%;
+        height: 1.8rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .boton-promocion a {
+        font-size: .8rem;
+        width: 100%;
+        line-height: .8rem;
+        height: auto;
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 570px) and (max-width: 768px) {
+    .contenido-banner {
+        padding: .5rem;
+    }
+    
+    .titulo-banner {
+        font-size: 1.5rem;
+    
+    }
+    
+    .sub-banner {
+        font-size: 1.2rem;
+        margin-top: 16px;
+    }
+    
+    .parrafo-banner {
+        font-size: .9rem;
+        margin-top: 16px;
+        width: 100%;
+        line-height: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    
+    .titulo-banner {
+        font-size: 2rem;
+    }
+    
+    .parrafo-banner {
+        font-size: .9rem;
+        margin-top: 16px;
+        width: 100%;
+        line-height: 1.1rem;
+    }
+}

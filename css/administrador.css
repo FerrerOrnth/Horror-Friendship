@@ -1,0 +1,259 @@
+#boton-administrador a{
+    font-size: .8rem;
+}
+
+#titulo-administrador {
+    text-align: left;
+    max-width: 35%;
+}
+
+.formulario-administrador {
+    width: 60%;
+    text-align: center;
+    margin: 0.8rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.formulario-administrador input {
+    width: 60%;
+    height: 2rem;
+    margin: .3rem auto;
+    padding: 0;
+    padding: 0 .5rem;
+}
+
+.menu-administrador {
+    width: 60%;
+    font-size: .8rem;
+    /* text-align: center; */
+}
+
+#text-area {
+    width: 62%;
+    margin: .5rem auto;
+}
+
+#agregar-producto {
+    width: 62.5%;
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+    #header-administrador {
+        width: 100%;
+        display: flex;
+    }
+    
+    #header-info-administrador {
+        width: 100%;
+    }
+    
+    #logo-container-administrador {
+        width: 100%;
+    }
+    
+    #boton-administrador {
+        width: 6rem;
+        margin-left: 30%;
+        padding: auto;
+    }
+    
+    #boton-administrador a{
+        font-size: .6rem;
+    }
+    
+    #lupa-administrador {
+        width: 40%;
+        justify-content: flex-end;
+        float: right;
+    }
+
+    #lupa-administrador i {
+        float: right;
+    }
+    #titulo-administrador {
+        text-align: left;
+        max-width: 80%;
+        margin: 0 2.8rem;
+        font-size: 1rem;
+    }
+    
+    .formulario-administrador {
+        width: 100%;
+        text-align: center;
+        margin: 0.8rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 2rem;
+    }
+    
+    .formulario-administrador input {
+        width: 80%;
+        height: 2rem;
+        margin: .3rem auto;
+        padding: 0;
+        padding: 0 .5rem;
+    }
+    
+    .menu-administrador {
+        width: 60%;
+        font-size: .8rem;
+        /* text-align: center; */
+    }
+    
+    #text-area {
+        width: 88%;
+        margin: .5rem auto;
+    }
+
+    #agregar-producto {
+        width: 89%;
+    }
+}
+
+@media (min-width: 570px) and (max-width: 768px) {
+    
+    #boton-administrador {
+        width: 5.5rem;
+        height: auto;
+        margin-left: 5%;
+        padding: auto;
+    }
+    
+    #boton-administrador a{
+        font-size: .6rem;
+    }
+    
+    #titulo-administrador {
+        margin: 0 5rem;
+
+    }
+    
+    .formulario-administrador {
+        width: 100%;
+        text-align: center;
+        margin: 0.8rem auto;
+        padding: 0 2rem;
+    }
+    
+    .formulario-administrador input {
+        width: 80%;
+        height: 2rem;
+        margin: .3rem auto;
+        padding: 0;
+        padding: 0 .5rem;
+    }
+    
+    .menu-administrador {
+        width: 60%;
+        font-size: .8rem;
+        /* text-align: center; */
+    }
+    
+    #text-area {
+        width: 83%;
+        margin: .5rem auto;
+    }
+
+    #agregar-producto {
+        width: 84%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    #boton-administrador {
+        width: 6.5rem;
+        height: auto;
+        margin-left: 5%;
+        padding: auto;
+    }
+    
+    #boton-administrador a{
+        font-size: .7rem;
+    }
+    
+    #titulo-administrador {
+        margin: 0 6rem;
+
+    }
+    
+    .formulario-administrador {
+        width: 100%;
+        text-align: center;
+        margin: 0.8rem auto;
+        padding: 0 2rem;
+    }
+    
+    .formulario-administrador input {
+        width: 80%;
+        height: 2rem;
+        margin: .3rem auto;
+        padding: 0;
+        padding: 0 .5rem;
+    }
+    
+    .menu-administrador {
+        width: 60%;
+        font-size: .8rem;
+    }
+    
+    #text-area {
+        width: 82%;
+        margin: .5rem auto;
+    }
+
+    #agregar-producto {
+        width: 83%;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    #boton-administrador {
+        width: 8.5rem;
+        height: auto;
+        margin-left: 5%;
+        padding: auto;
+    }
+    
+    #boton-administrador a{
+        font-size: .9rem;
+    }
+    
+    #titulo-administrador {
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    
+    .formulario-administrador {
+        width: 100%;
+        text-align: center;
+        margin: 0.8rem auto;
+        padding: 0 2rem;
+    }
+    
+    .formulario-administrador input {
+        width: 80%;
+        height: 2rem;
+        margin: .3rem auto;
+        padding: 0;
+        padding: 0 .5rem;
+    }
+    
+    .menu-administrador {
+        width: 60%;
+        font-size: .8rem;
+    }
+    
+    #text-area {
+        width: 81%;
+        margin: .5rem auto;
+    }
+
+    #agregar-producto {
+        width: 20%;
+    }
+}

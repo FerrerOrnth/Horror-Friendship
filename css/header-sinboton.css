@@ -1,0 +1,66 @@
+#header-sinboton {
+    width: auto;
+}
+
+#header-info-sinboton {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#logo-container-sinboton {
+    grid-column-start: 1;
+    margin: 0 .7rem;
+    padding: 0 .8rem;
+    width: 50%;
+}
+
+.lupa-productos-sinboton {
+    grid-column-start: 3;
+    padding: .5rem 1rem;
+}
+
+.lupa-sinboton {
+    color: green;
+}
+
+.header-ojo-sinboton {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 95%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* MEDIA */
+
+@media (min-width: 320px) and (max-width: 570px) {
+    
+}
+
+@media (min-width: 570px) and (max-width: 768px) {
+    
+}
+
+@media (min-width: 800px) and (max-width: 1024px){
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    #barra-busqueda-productos img{
+        margin-left: -.3rem;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+
+@media (min-width: 1300px) {
+    
+}

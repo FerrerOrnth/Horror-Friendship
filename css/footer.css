@@ -1,0 +1,255 @@
+.footer-general {
+    width: auto;
+    height: 300px;
+    background-color:darkred;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+.logo-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texto-logo2 {
+    /* display: flex;
+    flex-wrap: wrap; */
+    font-family: 'Emilys Candy', cursive;
+    font-size: 20px;
+    margin: 10px;
+    width: 100px;
+    position: relative;
+}
+
+.horror2 {
+    font-family: 'Luckiest Guy', cursive;
+    color: red;
+    font-size: 26px;
+    position: relative;
+}
+
+.enlaces-footer {
+    margin-right: 2rem;
+    padding-left: 0.2rem;
+    width: 90%;
+    height: auto;
+}
+
+.enlace-footer a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.8rem;
+    font-weight: 900;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.enlace-footer a:hover {
+    color: white;
+}
+
+.contacto-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0.3rem;
+}
+
+.titulo-contacto {
+    font-weight: 900;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.formulario-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30rem;
+    height: 10rem;
+}
+
+.salto {
+    display: none;
+}
+
+#nombre {
+    width: 30rem;
+    height: 2rem;
+    margin: 0.6rem 0;
+    padding: 0.5rem;
+}
+
+#mensaje {
+    width: 30rem;
+    height: 4rem;
+    margin-bottom: 0.6rem;
+    padding: 0.5rem;
+}
+
+.enviar {
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.enviar:hover {
+    background-color: red;
+}
+
+.creditos-footer {
+    height: 3rem;
+    background-color: black;
+    color: white;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.fa-fire {
+    color: orange;
+}
+
+/* MEDIA */
+
+@media  (max-width: 570px) {
+
+    .salto {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer-general {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .logo-footer {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        padding: 0;
+        
+    }
+
+    .enlaces-footer {
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: .7rem;
+        text-align: center;
+        padding-bottom: .8rem;
+    }
+
+    .formulario-footer {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .titulo-contacto {
+        font-size: 1rem;
+    }
+
+    #nombre {
+        width: 100%;
+        font-size: .7rem;
+    }
+    
+    #mensaje {
+        width: 100%;
+        font-size: .7rem;
+    }
+    
+    .enviar {
+        height: 2.5rem;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 14px;
+        font-family: 'MedievalSharp', cursive;
+    }
+
+    .creditos-footer {
+        height: auto;
+        font-size: .8rem;
+        line-height: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .footer-general {
+        padding: 1rem;
+        grid-template-columns: 2fr 2fr;
+        height: auto;
+    }
+
+    .logo-footer {
+      display: none;
+    }
+
+    .enlaces-footer {
+        margin: auto;
+        width: 70%;
+        height: auto;
+        font-size: 16px;
+        line-height: .3rem;
+        text-align: left;
+        /* padding-bottom: .8rem; */
+    }
+
+    .formulario-footer {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .titulo-contacto {
+        font-size: 1rem;
+    }
+
+    #nombre {
+        width: 100%;
+        font-size: .7rem;
+    }
+    
+    #mensaje {
+        width: 100%;
+        font-size: .7rem;
+    }
+    
+    .enviar {
+        height: 2.5rem;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 14px;
+        font-family: 'MedievalSharp', cursive;
+    }
+
+    .creditos-footer {
+        height: auto;
+        font-size: .8rem;
+        line-height: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* @media (min-width: 1200px) {
+    .formulario-footer {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        justify-content: center;
+    }
+} */

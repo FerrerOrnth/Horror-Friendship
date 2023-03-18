@@ -1,0 +1,106 @@
+.login-general {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(11, 1, 16, 0.947);
+}
+
+.iniciar-sesion {
+    color: white;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem auto;
+    padding-top: 1.7rem;
+    width: 100%;
+}
+
+.formulario-login {
+    width: 50%;
+    text-align: center;
+    margin: 0.8rem auto;
+
+}
+
+.formulario-login input {
+    width: 50%;
+    height: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.entrar {
+    width: 53%;
+    display: block;
+    text-align: center;
+    /* max-width: 10rem; */
+    height: 2.5rem;
+    margin: 0.5rem auto 2rem;
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.entrar:hover {
+    background-color: red;
+}
+
+/* MEDIA */
+
+@media (min-width: 320px) and (max-width: 570px) {
+    
+    .login-general {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgba(11, 1, 16, 0.947);
+    }
+    
+    .iniciar-sesion {
+        color: white;
+        font-family: 'MedievalSharp', cursive;
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 1rem auto;
+        padding-top: 1.7rem;
+        width: 100%;
+    }
+    
+    .formulario-login {
+        width: 100%;
+        text-align: center;
+        margin: 0.8rem auto;
+    
+    }
+    
+    .formulario-login input {
+        width: 80%;
+        height: 1.5rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+}
+
+@media (min-width: 570px) and (max-width: 768px) {
+    
+    .formulario-login {
+        width: 100%;
+        /* text-align: center; */
+        margin: 0.8rem auto;
+
+    }
+    
+    .formulario-login input {
+        width: 80%;
+        height: 1.5rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .entrar {
+        width: 28%;
+    }
+}

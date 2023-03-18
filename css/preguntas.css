@@ -1,0 +1,288 @@
+.preguntas-grilla {
+    background-color: rgb(37, 41, 37);
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+}
+
+.iconos-preguntas {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+.icono-preguntas {
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#preguntas1 img {
+    width: 70px;
+    height: 80px;
+    padding: 10px 0;
+}
+
+#preguntas3 img {
+    width: 80px;
+    height: 80px;
+    padding: 10px 0;
+}
+
+.texto-preguntas {
+    text-align: center;
+}
+
+.texto-preguntas a{
+    text-decoration: none;
+    color: darkred;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#flotante, #flotante1, #flotante2 {
+    background-color: rgb(37, 41, 37);
+    color: darkred;
+    display: block;
+    position: relative;
+    padding: 0.5rem 6rem 6rem; 
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+#flotante p, #flotante1 p, #flotante2 p {
+    column-count:2;
+    column-gap: 4rem;
+    column-rule: 2px solid gray;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.letra-inicial::first-letter {
+    initial-letter: 3.5;
+    font-family: 'MedievalSharp', cursive;
+    padding: 1rem;
+    border: 6px solid darkred;
+    margin-right: 1rem;
+    margin-top: 1.4rem;
+}
+
+.injusticia {
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.admiracion {
+    font-weight: 900;
+}
+
+.huestes {
+    text-decoration: line-through;
+}
+
+.comunidades {
+    text-decoration: underline;
+}
+
+#cerrar {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'MedievalSharp', cursive;
+    float: right;
+    position: relative;
+}
+
+.letra-inicial a{
+    margin: 24rem auto;
+}
+
+/* MEDIA */
+
+@media (min-width: 320px) and (max-width: 570px) {
+    .preguntas-grilla {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .iconos-preguntas {
+        width: 40%;
+        font-size: .5rem;
+        text-align: center;
+        margin: 1.2rem auto;
+        height: auto;
+        /* margin: 0 auto; */
+        text-align: center;
+        justify-content: center;
+    }
+    
+    #preguntas1 img {
+        width: 25%;
+        height: 52%;
+    }
+
+    #preguntas2 img {
+        width: 40%;
+        height: 66%;
+        margin-bottom: .3rem;
+    }
+
+    #preguntas3 img {
+        width: 35%;
+        height: 45%;
+    }
+
+    .texto-preguntas a{
+        font-size: .9rem;
+    }
+
+    #flotante, #flotante1, #flotante2 {
+        display: block;
+        position: relative;
+        padding: 1rem 2rem; 
+        line-height: 1.1rem;
+        font-size: 1rem;
+    }
+    
+    #flotante p, #flotante1 p, #flotante2 p {
+        column-count:1;
+        column-gap: .8rem;
+        column-rule: none;
+        margin-bottom: .2rem;
+        text-align: justify;
+        padding-bottom: 2rem;
+    }
+    
+    .letra-inicial::first-letter {
+        initial-letter: 1.3;
+        padding: .8rem;
+        border: 2px solid darkred;
+        margin-right: .3rem;
+        margin-top: 1rem;
+    }
+    
+    .injusticia {
+        font-size: .9rem;
+    
+    }
+    
+    #cerrar {
+        margin-top: -1rem;
+    }
+    
+    .letra-inicial a{
+        margin: 2rem auto;
+    }
+
+}
+
+@media (min-width: 570px) and (max-width: 768px) {
+    .preguntas-grilla {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .iconos-preguntas {
+        width: 40%;
+        font-size: .5rem;
+        text-align: center;
+        margin: 1.2rem auto;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .texto-preguntas a{
+        font-size: 1.1rem;
+    }
+
+    #flotante, #flotante1, #flotante2 {
+        display: block;
+        position: relative;
+        padding: 1rem 2rem; 
+        line-height: 1.1rem;
+        font-size: 1rem;
+    }
+    
+    #flotante p, #flotante1 p, #flotante2 p {
+        column-count:1;
+        column-gap: .8rem;
+        column-rule: none;
+        margin-bottom: .2rem;
+        text-align: justify;
+        padding-bottom: 2rem;
+    }
+    
+    .letra-inicial::first-letter {
+        initial-letter: 1.8;
+        padding: 1rem;
+        border: 2px solid darkred;
+        margin-right: .7rem;
+        margin-top: 1.1rem;
+    }
+    
+    .injusticia {
+        font-size: .9rem;
+    }
+    
+    #cerrar {
+        margin-top: -1rem;
+    }
+    
+    .letra-inicial a{
+        margin: 2rem auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    
+    .iconos-preguntas {
+        width: 60%;
+    }
+
+    #flotante, #flotante1, #flotante2 {
+        padding: 1rem 2rem; 
+        line-height: 1.2rem;
+        font-size: 1rem;
+    }
+    
+    #flotante p, #flotante1 p, #flotante2 p {
+        column-count: 2;
+        column-gap: 1.3rem;
+        column-rule: 2px solid gray;
+        margin-bottom: .2rem;
+        text-align: justify;
+        padding-bottom: 2rem;
+    }
+    
+    .letra-inicial::first-letter {
+        initial-letter: 1.6;
+        padding: 1rem;
+        border: 2px solid darkred;
+        margin-right: .7rem;
+        margin-top: 1.3rem;
+    }
+    
+    .injusticia {
+        font-size: .9rem;
+    }
+    
+    #cerrar {
+        margin-top: -1rem;
+    }
+    
+    .letra-inicial a{
+        margin: 2rem auto;
+    }
+}

@@ -1,0 +1,41 @@
+/* font-family: 'Bad Script', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Emilys Candy', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'MedievalSharp', cursive;
+font-family: 'RocknRoll One', sans-serif;
+font-family: 'Zen Kaku Gothic Antique', sans-serif; */
+/* 
+html {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+} */
+
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+
+
+    body html {
+        width: 100vw !important;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .barra-busqueda {
+        display: none;
+    }
+
+    .logo-container {
+        display: none;
+    }
+}
+
+

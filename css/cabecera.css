@@ -1,0 +1,330 @@
+.header-principal {
+    background-color: darkred;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    height: 4rem;
+}
+
+.header-info {
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo-container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.header-logo {
+    width: 3.5rem;
+    margin-left: 6rem;
+}
+
+.texto-logo {
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: center;
+    font-family: 'Emilys Candy', cursive;
+    font-size: 20px;
+    margin: auto 10px;
+    width: 100px;
+    position: relative;
+}
+
+.horror {
+    font-family: 'Luckiest Guy', cursive;
+    color: red;
+    font-size: 26px;
+    position: relative;
+}
+
+.barra-busqueda {
+    display: flex;
+    position: relative;
+    height: 1.5rem;
+    margin: auto 20px;
+}
+
+.busqueda-input {
+    border-radius: 20px;
+    width: 16rem;
+    position: relative;
+    border: none;
+    padding: 1rem;
+    margin-left: 3rem;
+    font-size: 17px;
+    font-family: 'MedievalSharp', cursive;
+    /* font-weight: 300; */
+}
+
+.header-ojo {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 92%;
+    top: 59%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#lupa {
+    display: none;
+}
+
+.login {
+    position: relative;
+    margin: auto;
+    width: 140px;
+}
+
+.boton-login {
+    width: 140px;
+    border: 1px solid black;
+    background-color: transparent;
+    height: 40px;
+    margin-left: 100%;
+}
+
+.boton-login:hover {
+    background-color: black;
+    color: darkred;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    margin-top: -6px;
+}
+
+.login a:hover {
+    color: darkred;
+    font-weight: bold;
+} 
+
+/* MEDIA */
+
+@media (min-width: 320px) and (max-width: 570px) {
+    .header-principal {
+        max-width: 100vw;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .header-info {
+        max-width: 100vw;
+        margin: 0;
+        padding: 0;
+        /* padding: 1rem; */
+    }
+
+    .logo-container {
+        width: 90vw;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-logo {
+        margin: 0;
+        width: 2.2rem;
+    }
+
+    .texto-logo {
+        width: 3rem;
+        font-size: 0.7rem;
+        margin-left: 0;
+    }
+
+    .texto-logo span {
+        font-size: 0.8rem;
+    }
+
+    .boton-login {
+        position: absolute;
+        margin-top: .3rem;
+        margin-left: 50%;
+        width: 3.2rem;
+        height: 1.6rem;
+    }
+
+    .login {
+        width: 20%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .login a {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    .barra-busqueda {
+        display: none;
+    }
+
+    #lupa {
+        color: rgb(30, 30, 30);
+        margin: auto 10%;
+        display: block;
+    }
+}
+
+@media (min-width: 570px) and (max-width: 768px) {
+    .header-principal {
+        height: auto;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .header-info {
+        padding: 1rem;
+    }
+
+    .logo-container {
+        padding-left: 1rem;
+    }
+
+    .header-logo {
+        margin: 0;
+        width: 2.2rem;
+    }
+
+    .texto-logo {
+        width: 3rem;
+        font-size: 0.7rem;
+        margin-left: 0;
+    }
+
+    .texto-logo span {
+        font-size: 0.8rem;
+    }
+
+    .barra-busqueda {
+        width: 50%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .boton-login {
+        margin-top: .3rem;
+        margin-left: 20%;
+        width: 4.2rem;
+        height: 1.6rem;
+    }
+
+    .login {
+        padding: 0;
+        margin: 0;
+    }
+
+    .login a {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1024px){
+    .busqueda-input {
+        width: 18rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-principal {
+        width: auto;
+        overflow: hidden;
+    }
+
+    .header-principal {
+        max-width: 100vw;
+        height: auto;
+        padding: 10px 2rem;
+    }
+
+    .header-logo {
+        margin: 0;
+        width: 2.2rem;
+    }
+
+    .texto-logo {
+        width: 3rem;
+        font-size: 0.7rem;
+        margin-left: 0;
+    }
+
+    .texto-logo span {
+        font-size: 0.8rem;
+    }
+
+    .boton-login {
+        position: absolute;
+        margin-top: .3rem;
+        margin-left: 50%;
+        width: 3.2rem;
+        height: 1.6rem;
+    }
+
+    .login {
+        width: 120px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .login a {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    .boton-login {
+        width: 120px;
+        margin-left: 30%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-principal {
+        width: auto;
+        overflow: hidden;
+    }
+    
+    .header-logo {
+        margin-left: 2rem;
+    }
+    
+    .login {
+        width: 140px;
+    }
+    
+    .boton-login {
+        width: 140px;
+        margin-left: 50%;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    .header-logo {
+        margin-left: 4rem;
+    }
+    
+    .login {
+        width: 180px;
+    }
+    
+    .boton-login {
+        width: 180px;
+        margin-left: 50%;
+    }
+
+    .busqueda-input {
+        width: 26rem;
+    }
+}
