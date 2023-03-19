@@ -80,6 +80,12 @@
         height: 1.5rem;
         margin: 0.5rem;
         padding: 0.5rem;
+        font-size: .7rem;
+    }
+
+    .entrar {
+        width: 50%;
+        margin: 0 uto;
     }
 
 }
@@ -95,6 +101,27 @@
     
     .formulario-login input {
         width: 80%;
+        height: 1.5rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .entrar {
+        width: 28%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    
+    .formulario-login {
+        width: 100%;
+        /* text-align: center; */
+        margin: 0.8rem auto;
+
+    }
+    
+    .formulario-login input {
+        width: 60%;
         height: 1.5rem;
         margin: 0.5rem;
         padding: 0.5rem;

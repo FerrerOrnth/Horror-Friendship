@@ -1,4 +1,14 @@
-
+.busqueda-input-productos {
+    border-radius: 20px;
+    width: 16rem;
+    position: relative;
+    border: none;
+    padding: 1rem;
+    margin-left: 3rem;
+    font-size: 17px;
+    font-family: 'MedievalSharp', cursive;
+    /* font-weight: 300; */
+}
 
 #pregrilla-productos {
     display: grid;
@@ -21,22 +31,28 @@
     position: relative;
     display: block;
     margin: 1rem 0;
+    padding: 0;
     width: 100%;
 }
 
 .agregar {
-    height: 2.5rem;
+    height: auto;
     display: block;
     position: relative;
-    width: 10rem;
+    width: 8rem;
     background-color: darkred;
     color: white;
     border: none;
     padding: 14px;
     margin: 1rem .5rem;
     grid-column-start: 5;
-    justify-content: flex-end;
+    font-family: 'MedievalSharp', cursive;
+    float: right;
 }
+
+/* .agregar a {
+    font-size: 3rem;
+} */
 
 .agregar:hover {
     background-color: red;
@@ -90,6 +106,7 @@
         padding: 14px auto;
         font-size: .7rem;
         margin: .5rem 0;
+        float: right;
     }
     
     .agregar:hover {
@@ -120,16 +137,33 @@
         font-weight: 900;
         width: 70%;
     }
-    
+
     .agregar {
         height: auto;
-        width: 30%;
+        width: 25%;
         font-size: .7rem;
         margin: 0;
-        justify-content: flex-end;
-        justify-self: flex-end;
+        float: right;
     }
-    
+}
+@media (min-width: 570px) and (max-width: 1024px) {
+    #ojo-productos{
+        /* margin: 0;
+        padding: 0; */
+        position: relative;
+        left:0;
+    }
+
+    #barra-busqueda-productos {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* #busqueda-input-productos {
+        width: 8rem;
+    } */
+
 }
 
 
@@ -161,6 +195,7 @@
         width: 25%;
         font-size: .7rem;
         margin: 0;
+        float: right;
     }
 }
 
@@ -177,17 +212,18 @@
     }
 
     #titulo-productos {
-        margin: 0 2rem .5rem 0;
+        margin: 0 auto;
+        padding-top: 1.2rem;
         font-size: 1.2rem;
         font-weight: 900;
-        width: 74%;
+        /* width: 74%; */
     }
     
     .agregar {
         height: auto;
         width: 20%;
         max-width: 20%;
-        font-size: .7rem;
-        margin: 0;
+        font-size: .8rem;
+        float: right;
     }
 }

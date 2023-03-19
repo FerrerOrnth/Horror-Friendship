@@ -72,6 +72,7 @@
     cursor: pointer;
 }
 
+
 #lupa {
     display: none;
 }
@@ -97,11 +98,12 @@
 
 .login a {
     text-decoration: none;
+    font-family: 'MedievalSharp', cursive;
     color: white;
     font-size: 20px;
     display: block;
     width: 100%;
-    margin-top: -6px;
+    margin-top: -1px;
 }
 
 .login a:hover {
@@ -174,6 +176,7 @@
         color: rgb(30, 30, 30);
         margin: auto 10%;
         display: block;
+        width: 1.3rem;
     }
 }
 
@@ -228,6 +231,12 @@
     .login a {
         font-size: 14px;
         margin-top: -5px;
+    }
+}
+
+@media (min-width: 570px) and (max-width: 1024px){
+    #barra-baja {
+        margin-top: .1rem;
     }
 }
 

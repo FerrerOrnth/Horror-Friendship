@@ -13,6 +13,12 @@
     padding: 0 .8rem;
     width: 50%;
 }
+#ojo {
+    text-align: center;
+    /* align-items: center;
+    align-self: center;
+    align-items: center; */
+}
 
 .lupa-productos-sinboton {
     grid-column-start: 3;
@@ -23,13 +29,14 @@
     color: green;
 }
 
+
 .header-ojo-sinboton {
     color: #191919;
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 95%;
-    top: 50%;
+    left: 92%;
+    top: 60%;
     transform: translateY(-50%);
     cursor: pointer;
 }

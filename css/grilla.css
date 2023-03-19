@@ -1,5 +1,5 @@
 .contenedor-grillas {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     background-color: rgba(11, 1, 16, 0.947);
 }
 
@@ -71,10 +71,20 @@
     color: white;
     margin-bottom: 0.5rem;
     font-size: 16px;
+    min-height: 1.4rem;
+}
+
+.nombre-producto1 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    min-height: 2.3rem;
+    max-width: 90%;
 }
 
 .precio-producto {
     color: red;
+    font-family: 'MedievalSharp', cursive;
     margin-bottom: 0.5rem;
     font-size: 16px;
     font-weight: bold;
@@ -82,7 +92,10 @@
 
 .ver-producto {
     text-decoration: none;
-    font-size: 16px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: .9rem;
+    font-weight: bold;
+    color: rgb(132, 25, 132);
 
 }
 
@@ -244,6 +257,7 @@
     .grilla {
         width: 100%;
         height: 400px;
+        padding: 1.5rem;
     
     }
     

@@ -29,7 +29,7 @@
             <div class="logo-container" id="logo-container-administrador" >
                 <a href="index.html"><img class="header-logo" src="images/Horror Friendship.png" alt="logo fantasma"></a>
                 <p class="texto-logo"><span class="horror">Horror</span>friendship</p>
-                <div class="barra-busqueda">
+                <div class="barra-busqueda" id="barra-baja">
                     <input class="busqueda-input" type="text" placeholder="¿Que booscas?" data-buscador>
                     <img class="header-ojo" src="images/bleeding-eye-icon-original.svg" alt="ojo">
                 </div> 
@@ -39,7 +39,8 @@
                     </button>
                 </div>
                 <div class="lupa-productos" id="lupa-administrador">
-                    <i class="fa-solid fa-magnifying-glass" id="lupa" ></i>
+                    <img id="lupa" src="images/bleeding-eye-icon-original.svg" title="Buscar" alt="ojo">
+                    <!-- <i class="fa-solid fa-magnifying-glass" id="lupa" ></i> -->
                 </div>
             </div>    
         </div>
@@ -53,7 +54,9 @@
                 <input type="text" class="menu-administrador" name="nombreproducto" placeholder="Nombre del producto" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
                 <input type="number" class="menu-administrador"name="precio" id="precio" placeholder="Ingrese el precio del producto"  min="0" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
                 <textarea name="textarea" class="menu-administrador" id="text-area" rows="4" cols="50" placeholder="Descripción del producto" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/></textarea>
-                <button class="entrar" id="agregar-producto" >Agregar producto</button>
+                <button class="entrar" id="agregar-producto">
+                    <a href="productos-administrador.html">Agregar producto</a>
+                </button>
             </form>
         </div>
         <footer>

@@ -7,12 +7,14 @@
         <script src="https://kit.fontawesome.com/fe3f6d7c1b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/cabecera.css">
+        <link rel="stylesheet" href="css/header-sinboton.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/banner.css">
         <link rel="stylesheet" href="css/preguntas.css">
         <link rel="stylesheet" href="css/grilla.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/productos.css">
+        <link rel="stylesheet" href="css/producto-individual.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat&family=Emilys+Candy&family=Fredericka+the+Great&family=Luckiest+Guy&family=MedievalSharp&family=RocknRoll+One&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -22,18 +24,19 @@
     <title>Horror friendship</title>
     <link rel="icon" type="image/x-icon" href="images/Horror Friendship.png">
     </head>
-    <header class="header-principal" id="header-productos">
-        <div class="header_info" id="header-info-productos">
-            <div class="logo-container" id="logo-container-productos" >
+    <header class="header-principal" id="header-sinboton">
+        <div class="header_info" id="header-info-sinboton">
+            <div class="logo-container" id="logo-container-sinboton" >
                 <a href="index.html"><img class="header-logo" id="header-logo-productos" src="images/Horror Friendship.png" alt="logo fantasma"></a>
                 <p class="texto-logo"><span class="horror">Horror</span>friendship</p>
-                <div class="barra-busqueda" id="barra-busqueda-productos">
+                <div class="barra-busqueda" id="barra-busqueda-producto-individual">
                     <input class="busqueda-input" type="text" placeholder="¿Que booscas?" data-buscador>
-                    <img class="header-ojo" src="images/bleeding-eye-icon-original.svg" alt="ojo">
+                    <img class="header-ojo-sinboton" id="ojo" src="images/bleeding-eye-icon-original.svg" alt="ojo">
                 </div>
             </div>
-            <div class="lupa-productos">
-                <i class="fa-solid fa-magnifying-glass" class="lupa-productos" id="lupa"></i>          
+            <div class="lupa-productos-sinboton">
+                <img class="lupa-sinboton" id="lupa" src="images/bleeding-eye-icon-original.svg" title="Buscar" alt="ojo">
+                <!-- <i class="fa-solid fa-magnifying-glass" class="lupa-sinboton" id="lupa"></i>           -->
             </div>
         </div>
     </header>
@@ -42,81 +45,114 @@
             <div class="grilla" id="grilla-productos">
                 <div class="pre-grilla" id="pregrilla-productos" >
                     <h3 class="h3-grilla" id="titulo-productos" >Todos los productos</h3>
-                    <!-- <a class="ver-todo" href="#">Ver todo</a>
-                    <img class="dedo" src="/images/Dedo.png"> -->
-                    <!-- <i class="fa-regular fa-hand-point-right"></i> -->
-                    <button class="agregar">Agregar producto</button>
+                    <!-- <button class="agregar">Agregar producto</button> -->
                 </div>
                 <div class="productos">
                     <div class="producto">
-                        <img class="foto-producto" src="images/vamp.png">
-                        <p class="nombre-producto">Drácula anima tu fiesta</p>
+                        <img class="foto-producto" src="images/Productos/conejo1.png">
+                        <p class="nombre-producto1">Conejo zombie con cerebro afuera</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#" >Ver producto</a>    
                     </div>
                     <div class="producto">
-                        <img class="foto-producto" src="images/zombie.png">
-                        <p class="nombre-producto">Cena con zombie vegano</p>
+                        <img class="foto-producto" src="images/Productos/mascara.jpg">
+                        <p class="nombre-producto1">Máscara para esconder tu vergüenza</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#">Ver producto</a>    
                     </div>
                     <div class="producto">
-                        <img class="foto-producto" src="images/Banshees.png">
-                        <p class="nombre-producto">Karaoke con Banshees</p>
+                        <img class="foto-producto" src="images/Productos/skeleton.jpg">
+                        <p class="nombre-producto1">Esqueleto articulado mas lindo que tú</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#">Ver producto</a>    
                     </div>
                     <div class="producto">
-                        <img class="foto-producto" src="images/Lobizon.png">
-                        <p class="nombre-producto">A las pistas con Fred</p>
+                        <img class="foto-producto" src="images/Productos/taza1.jpg">
+                        <p class="nombre-producto1">Taza vampiro para desayunos mas felices</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#">Ver producto</a>     
                     </div>
                     <div class="producto">
-                        <img class="foto-producto" src="images/Bruja.png">
-                        <p class="nombre-producto">Bar tender Olga</p>
+                        <img class="foto-producto" src="images/Productos/manos.jpg">
+                        <p class="nombre-producto1">Manos cercenadas para rascarte...</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#">Ver producto</a>    
                     </div>
                     <div class="producto">
-                        <img class="foto-producto" src="images/Frank.png">
-                        <p class="nombre-producto">Mecánica con Frank</p>
+                        <img class="foto-producto" src="images/Productos/fantas2.jpg">
+                        <p class="nombre-producto1">Set de fantasmas (mejor adopta uno real)</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#">Ver producto</a>      
                     </div>
                     <div class="producto">
-                        <img class="foto-producto" src="images/vamp.png">
-                        <p class="nombre-producto">Drácula anima tu fiesta</p>
+                        <img class="foto-producto" src="images/Productos/zombie1.jpg">
+                        <p class="nombre-producto1">Zombie articulado para mejorar tu vida</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#" >Ver producto</a>    
                     </div>
                     <div class="producto">
-                        <img class="foto-producto" src="images/zombie.png">
-                        <p class="nombre-producto">Cena con zombie vegano</p>
+                        <img class="foto-producto" src="images/Productos/aros.jpg">
+                        <p class="nombre-producto1">Elegantes aros de mascota amorosa</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#">Ver producto</a>    
                     </div>
                     <div class="producto">
-                        <img class="foto-producto" src="images/Banshees.png">
-                        <p class="nombre-producto">Karaoke con Banshees</p>
+                        <img class="foto-producto" src="images/Productos/cabezademonio.png">
+                        <p class="nombre-producto1">Cabeza demoníaca para decorar tu hogar</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#">Ver producto</a>    
                     </div>
                     <div class="producto">
-                        <img class="foto-producto" src="images/Lobizon.png">
-                        <p class="nombre-producto">A las pistas con Fred</p>
+                        <img class="foto-producto" src="images/Productos/hombrelob.jpg">
+                        <p class="nombre-producto1">Escultura de hombre lobo para tu mesa de luz</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#">Ver producto</a>     
                     </div>
                     <div class="producto">
-                        <img class="foto-producto" src="images/Bruja.png">
-                        <p class="nombre-producto">Bar tender Olga</p>
+                        <img class="foto-producto" src="images/Productos/librodragon.jpg">
+                        <p class="nombre-producto1">Diario íntimo con portada aleja intrusos</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#">Ver producto</a>    
                     </div>
                     <div class="producto">
-                        <img class="foto-producto" src="images/Frank.png">
-                        <p class="nombre-producto">Mecánica con Frank</p>
+                        <img class="foto-producto" src="images/Productos/murcielagocolgado.png">
+                        <p class="nombre-producto1">Murciélago colgado para tener en casa. Porque sí!</p>
+                        <p class="precio-producto">$800.-</p>
+                        <a class="ver-producto" href="#">Ver producto</a>      
+                    </div>
+                    <div class="producto">
+                        <img class="foto-producto" src="images/Productos/dientes.png">
+                        <p class="nombre-producto1">Dentadura sin cuerda. No hace nada.</p>
+                        <p class="precio-producto">$800.-</p>
+                        <a class="ver-producto" href="#">Ver producto</a>    
+                    </div>
+                    <div class="producto">
+                        <img class="foto-producto" src="images/Productos/tumba.png">
+                        <p class="nombre-producto1">Compra tu tumba para evitar errores</p>
+                        <p class="precio-producto">$800.-</p>
+                        <a class="ver-producto" href="#">Ver producto</a>     
+                    </div>
+                    <div class="producto">
+                        <img class="foto-producto" src="images/Productos/dadosojos.jpg">
+                        <p class="nombre-producto1">Dados que te observan y juzgan mientras juegas</p>
+                        <p class="precio-producto">$800.-</p>
+                        <a class="ver-producto" href="#">Ver producto</a>    
+                    </div>
+                    <div class="producto">
+                        <img class="foto-producto" src="images/Productos/libromuertos.jpg">
+                        <p class="nombre-producto1">Libro de los muertos para guardar huevos de araña</p>
+                        <p class="precio-producto">$800.-</p>
+                        <a class="ver-producto" href="#">Ver producto</a>      
+                    </div>
+                    <div class="producto">
+                        <img class="foto-producto" src="images/Productos/momia.jpg">
+                        <p class="nombre-producto1">Alegre momia para tus macetas</p>
+                        <p class="precio-producto">$800.-</p>
+                        <a class="ver-producto" href="#">Ver producto</a>    
+                    </div>
+                    <div class="producto">
+                        <img class="foto-producto" src="images/Productos/serpiente.jpg">
+                        <p class="nombre-producto1">Joyería para que te respeten</p>
                         <p class="precio-producto">$800.-</p>
                         <a class="ver-producto" href="#">Ver producto</a>      
                     </div>
