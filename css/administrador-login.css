@@ -1,0 +1,103 @@
+.login-administrador {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.formulario-login-administrador {
+    width: 40%;
+    height: auto;
+    margin: 1rem auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titulo-login-administrador {
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    font-family:'MedievalSharp', cursive;
+}
+
+#usuario-administrador {
+    width: 70%;
+    height: 2rem;
+    margin: .3rem auto;
+    text-align: center;
+}
+
+#pass-administrador {
+    width: 70%;
+    height: 2rem;
+    margin: .3rem auto;
+    text-align: center;
+    font-family:'MedievalSharp', cursive;
+}
+
+.login-admin {
+    width: 30%;
+    height: 2rem;
+    margin: 1rem auto;
+    font-family:'MedievalSharp', cursive;
+    background-color: darkred;
+    color: #fff;
+    border: none;
+}
+
+.login-admin:hover {
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .formulario-login-administrador {
+        width: 80%;
+    }
+    
+    
+    .titulo-login-administrador {
+        font-size: 1rem;
+    }
+    
+    #usuario-administrador {
+        width: 90%;
+        font-size: .7rem;
+    }
+    
+    #pass-administrador {
+        width: 90%;
+        font-size: .7rem;
+    }
+    
+    .login-admin {
+        width: 50%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+    .formulario-login-administrador {
+        width: 80%;
+    }
+    
+    
+    .titulo-login-administrador {
+        font-size: 1.2rem;
+    }
+    
+    #usuario-administrador {
+        width: 80%;
+        font-size: 1rem;
+    }
+    
+    #pass-administrador {
+        width: 80%;
+        font-size: 1rem;
+    }
+    
+    .login-admin {
+        width: 50%;
+    }
+}

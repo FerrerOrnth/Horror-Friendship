@@ -70,30 +70,37 @@
 /* MEDIA */
 
 @media (min-width: 320px) and (max-width: 570px) {
+
     .contenido-banner {
         padding: .5rem;
     }
     
     .titulo-banner {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        /* text-align: center;
+        margin: 0 auto;
+        width: 100vw;
+        flex-wrap: wrap; */
     
     }
     
     .sub-banner {
-        font-size: .9rem;
+        font-size: 1.2rem;
         margin-top: 16px;
+        /* width: 80%;
+        padding: 0; */
     }
     
     .parrafo-banner {
-        font-size: .7rem;
+        font-size: 1rem;
         margin-top: 16px;
         width: 100%;
-        line-height: .9rem;
+        line-height: 1rem;
     }
     
     .boton-promocion {
-        width: 30%;
-        height: 1.8rem;
+        width: 80%;
+        height: 1.9rem;
         margin-top: 1rem;
         display: flex;
         flex-wrap: nowrap;
@@ -143,4 +150,69 @@
         width: 100%;
         line-height: 1.1rem;
     }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px){
+    
+    .titulo-banner {
+        font-size: 2.3rem;
+    }
+    
+    .parrafo-banner {
+        font-size: 1.2rem;
+        margin-top: 16px;
+        width: 100%;
+        line-height: 1.1rem;
+    }
+}
+
+#item-1, 
+#item-2, 
+#item-3 {
+	position: absolute;
+    display: block;
+	top: 2em;
+    width: 60%;
+    font-size: 2em;
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+#item-1{
+	animation-name: anim-1;
+    overflow: hidden;
+}
+
+#item-2{
+	animation-name: anim-2;
+    overflow: hidden;
+}
+
+#item-3{
+	animation-name: anim-3;
+    overflow: hidden;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+    8.3%,25% { left: 2%; opacity: 1; }
+    33.33%, 100% { opacity: 0; overflow-X: hidden; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+    41.63%, 58.29% { left: 2%; opacity: 1; }
+    66.66%, 100% { opacity: 0; overflow-X: hidden;}
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% { left: 2%; opacity: 1; }
+    100% { opacity: 0; overflow-X: hidden;}
+}
+
+.parrafo-relleno {
+    height: 400px;
+    opacity: 0;
 }

@@ -19,6 +19,7 @@ html {
 body {
     width: 100%;
     background-color: rgba(11, 1, 16, 0.947);
+    /* overflow-X: hidden; */
 }
 
 @media (min-width: 320px) and (max-width: 570px) {

@@ -49,6 +49,20 @@
     color: white;
 }
 
+.enlace-footer2 a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.8rem;
+    font-weight: 900;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.enlace-footer2 a:hover {
+    color: white;
+    cursor: not-allowed;
+    color: red;
+}
+
 .contacto-footer {
     display: flex;
     flex-wrap: wrap;
@@ -85,6 +99,14 @@
     padding: 0.5rem;
 }
 
+/* #prohibido {
+    cursor: not-allowed;
+} */
+/* #prohibido a:hover {
+    cursor: not-allowed;
+    color: red;
+} */
+
 .enviar {
     height: 2.5rem;
     background-color: black;
@@ -105,6 +127,9 @@
     padding-top: 1.5rem;
     text-align: center;
     font-family: 'MedievalSharp', cursive;
+    background-image: url(../images/tela.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fa-heart {
@@ -253,3 +278,37 @@
         justify-content: center;
     }
 } */
+
+
+#tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black;  */
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 18rem;
+    background-color: darkred;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid white;
+    /* border-radius: 6px; */
+    font-size: 16px;
+    font-family: 'MedievalSharp', cursive;
+    top: 100%;
+    left: -25%;
+    line-height: 1rem;
+    /* margin-left: -60px; */
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

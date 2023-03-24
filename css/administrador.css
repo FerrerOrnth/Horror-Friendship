@@ -1,14 +1,10 @@
-#boton-administrador a{
-    font-size: .8rem;
-}
-
 #titulo-administrador {
-    text-align: left;
+    text-align: center;
     max-width: 35%;
 }
 
 .formulario-administrador {
-    width: 60%;
+    width: 100%;
     text-align: center;
     margin: 0.8rem auto;
     display: flex;
@@ -16,27 +12,133 @@
     padding: 0 2rem;
 }
 
+.filas {
+    width: 100%;
+}
+
+.fila {
+    justify-content: center;
+    margin: o auto;
+    width: 50%;
+}
+
 .formulario-administrador input {
-    width: 60%;
+    width: 50%;
     height: 2rem;
     margin: .3rem auto;
-    padding: 0;
     padding: 0 .5rem;
 }
 
-.menu-administrador {
-    width: 60%;
-    font-size: .8rem;
-    /* text-align: center; */
+.container-input {
+    text-align: center;
+    background: transparent;
+    padding:S 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+
+.inputfile + label img {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.texto-imagen {
+	font-size: 1rem; 
+	font-family: 'MedievalSharp', cursive;
+    color: darkred;
+}
+
+
+
+.inputfiles + label {
+    color: #c39f77;
+}
+
+.inputfiles:focus + label,
+.inputfiles.has-focus + label,
+.inputfiles + label:hover {
+    color: transparent;
+}
+
+.inputfiles + label figure {
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+    background-color: transparent;
+    display: block;
+    /* padding: 20px; */
+    margin: 0 auto 10px;
+}
+
+.inputfiles:focus + label figure,
+.inputfiles.has-focus + label figure,
+.inputfiles + label:hover figure {
+    background-color: transparent;
+}
+
+.inputfiles + label img {
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+}
+
+/* select */
+
+select {
+    color: #383737;
+    border: 1px solid white;
+    overflow: hidden;
+    height: auto;
+    min-height: 2rem;
+    font-size: 1rem;
+
+}
+
+#select {
+    width: 30%;
+    margin: .3rem .5rem 1rem;
+    padding: .5rem;
+}
+
+
+option:hover {
+    background-color: darkred;
+    color: #fff;
+    font-size: 1.1rem;    
 }
 
 #text-area {
-    width: 62%;
+    width: 51.5%;
     margin: .5rem auto;
 }
 
 #agregar-producto {
-    width: 62.5%;
+    width: 52%;
 }
 
 #conenlace a {
@@ -70,7 +172,6 @@
         margin-left: 50%;
         margin-top: .5rem;
         padding: auto;
-        /* margin-right: 9rem; */
     }
     
     #boton-administrador a{
@@ -81,16 +182,10 @@
         width: 30%;
         position: relative;
         left: 20%;
-        
-        /* justify-content: flex-end; */
-        /* padding-left: 50%; */
     }
 
-    /* #lupa-administrador i {
-        float: right;
-    } */
     #titulo-administrador {
-        text-align: left;
+        text-align: center;
         max-width: 80%;
         margin: 0 2.8rem;
         font-size: 1rem;
@@ -109,18 +204,52 @@
         width: 80%;
         height: 2rem;
         margin: .3rem auto;
-        padding: 0;
-        padding: 0 .5rem;
+        padding:  .5rem;
     }
     
     .menu-administrador {
         width: 60%;
         font-size: .8rem;
-        /* text-align: center; */
     }
     
+    .container-input {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .inputfile + label {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    
+    }
+
+    .inputfile + label img{
+        margin: 0;
+    }
+
+    #select {
+        width: 70%;
+        margin-bottom: 1rem;
+        font-size: .8rem;
+        padding: .1rem;
+    }
+
+    option:hover {
+        font-size: .8rem;
+    
+    }
+    #nombre-admin {
+        height: 1.5rem;
+    }
+
+    #precio {
+        height: 1.5rem;
+    }
+
     #text-area {
         width: 88%;
+        height: 6rem;
         margin: .5rem auto;
     }
 
@@ -131,19 +260,9 @@
 
 @media (min-width: 570px) and (max-width: 768px) {
     
-    #boton-administrador {
-        width: 5.5rem;
-        height: auto;
-        margin-left: 5%;
-        padding: auto;
-    }
-    
-    #boton-administrador a{
-        font-size: .6rem;
-    }
     
     #titulo-administrador {
-        margin: 0 5rem;
+        margin: 0 auto;
 
     }
     
@@ -155,7 +274,7 @@
     }
     
     .formulario-administrador input {
-        width: 80%;
+        width: 90%;
         height: 2rem;
         margin: .3rem auto;
         padding: 0;
@@ -165,16 +284,52 @@
     .menu-administrador {
         width: 60%;
         font-size: .8rem;
-        /* text-align: center; */
     }
     
+    .container-input {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .inputfile + label {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    
+    }
+
+    .inputfile + label img{
+        margin: 0;
+    }
+
+    #select {
+        width: 70%;
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: .8rem;
+        padding: .1rem;
+    }
+
+    option:hover {
+        font-size: .8rem;
+    
+    }
+    #nombre-admin {
+        height: 1.5rem;
+    }
+
+    #precio {
+        height: 1.5rem;
+    }
+
     #text-area {
-        width: 83%;
+        width: 93%;
+        height: 6rem;
         margin: .5rem auto;
     }
 
     #agregar-producto {
-        width: 84%;
+        width: 93%;
     }
 }
 
@@ -192,7 +347,7 @@
     }
     
     #titulo-administrador {
-        margin: 0 6rem;
+        margin: 0 auto;
 
     }
     
@@ -209,6 +364,11 @@
         margin: .3rem auto;
         padding: 0;
         padding: 0 .5rem;
+    }
+
+    .container-input {
+        margin: 0 auto;
+        padding: 0;
     }
     
     .menu-administrador {
@@ -224,60 +384,12 @@
     #agregar-producto {
         width: 83%;
     }
-}
 
-@media (min-width: 570px) and (max-width: 1024px){
-
-    #boton-administrador {
-        margin-top: .1rem;
+    #select {
+        width: 70%;
     }
 }
 
-@media (min-width: 1024px) {
-    
-    #boton-administrador {
-        width: 8.5rem;
-        height: auto;
-        margin-left: 5%;
-        padding: auto;
-    }
-    
-    #boton-administrador a{
-        font-size: .9rem;
-    }
-    
-    #titulo-administrador {
-        margin: 0 auto;
-        text-align: center;
 
-    }
-    
-    .formulario-administrador {
-        width: 100%;
-        text-align: center;
-        margin: 0.8rem auto;
-        padding: 0 2rem;
-    }
-    
-    .formulario-administrador input {
-        width: 80%;
-        height: 2rem;
-        margin: .3rem auto;
-        padding: 0;
-        padding: 0 .5rem;
-    }
-    
-    .menu-administrador {
-        width: 60%;
-        font-size: .8rem;
-    }
-    
-    #text-area {
-        width: 81%;
-        margin: .5rem auto;
-    }
 
-    #agregar-producto {
-        width: 20%;
-    }
-}
+

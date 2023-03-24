@@ -43,7 +43,12 @@
 
 #flotante, #flotante1, #flotante2 {
     background-color: rgb(37, 41, 37);
-    color: darkred;
+    background-image: url(../images/spider3.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-size: 100%;
+    color: rgba(255, 255, 255, 0.614);
+    text-shadow: 1px 2px 3px black;
     display: block;
     position: relative;
     padding: 0.5rem 6rem 6rem; 
@@ -54,7 +59,7 @@
 #flotante p, #flotante1 p, #flotante2 p {
     column-count:2;
     column-gap: 4rem;
-    column-rule: 2px solid gray;
+    column-rule: 2px solid darkred;
     text-align: justify;
     margin-bottom: 2rem;
 }
@@ -73,10 +78,12 @@
     font-size: 1.2rem;
     text-transform: uppercase;
     font-family: 'MedievalSharp', cursive;
+    color: darkred;
 }
 
 .admiracion {
     font-weight: 900;
+    color: darkred;
 }
 
 .huestes {
@@ -114,7 +121,7 @@
     }
     
     .iconos-preguntas {
-        width: 40%;
+        width: 60%;
         font-size: .5rem;
         text-align: center;
         margin: 1.2rem auto;
@@ -157,7 +164,7 @@
         column-gap: .8rem;
         column-rule: none;
         margin-bottom: .2rem;
-        text-align: justify;
+        text-align: left;
         padding-bottom: 2rem;
     }
     

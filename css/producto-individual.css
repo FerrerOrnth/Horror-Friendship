@@ -285,7 +285,6 @@
 
     .descripcion-individual {
         font-size: .8rem;
-        /* line-height: 1rem; */
         line-height: 1.2rem;
         max-height: 350px;
         overflow: scroll;

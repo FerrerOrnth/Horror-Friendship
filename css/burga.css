@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #6C7A86 ;
+}
+
+#menu {
+    z-index: 2;
+}
+
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.nav {
+    transition: 1.6s ease;
+    display: none;
+}
+
+.nav ul {
+    padding: 0 12px;
+}
+
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+    line-height: .5rem;
+}
+
+.nav li a {
+    color: white;
+    font-size: 18px;
+    font-family:'MedievalSharp', cursive;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+}
+
+.menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, darkred, darkred);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.change {
+    display: block;
+}
+
+.visible {
+    width: 50px;
+}
+
+.visible2 {
+    width: 50px;
+    opacity: 0;
+}
+
+.change .visible {
+    opacity: 0;
+    position: absolute;
+}
+
+.change .visible2 {
+    opacity: 1;
+}
+
+.change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+}
+
+
+
+
+.flier {
+	pointer-events: none;
+}
+
+.flier img {
+    width: 30px;
+}
+
+.flier > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 10s linear;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateY(120%);
+	position: fixed;
+	animation-delay: .5s;
+	z-index: 999999;
+}
+
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+
+
+@keyframes fly {
+
+	0%, 100% {
+                display: block;
+		transform:  translateX(100vh) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100%) translateY(100%) rotateZ(0deg)
+	}
+
+	15.001%, 18% {
+		transform: translateY(30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateY(-3vh) rotateZ(0deg)
+	}
+
+	40.001%, 43% {
+		transform:  translateY(100%) rotateZ(0deg)
+	}
+
+	65% {
+		transform:  translateY(-50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform:  translateY(200%) rotateZ(0deg)
+	}
+
+	95% {
+		opacity: 0;
+	}
+}

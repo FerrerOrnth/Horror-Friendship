@@ -1,7 +1,11 @@
 .contenedor-grillas {
     padding-bottom: 2rem;
     background-color: rgba(11, 1, 16, 0.947);
+    background-image: url(../images/bats2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 .grilla {
     width: 100%;
@@ -11,8 +15,6 @@
 
 .pre-grilla {
     width: 90%;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 
 .h3-grilla {
@@ -103,6 +105,10 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
 
+    .contenedor-grillas {
+        background-size: 100%;
+    }
+    
     .pre-grilla {
         width: 90%;
         padding: 1rem 0;
@@ -191,6 +197,12 @@
 }
 
 @media (min-width: 768px) and (max-width: 1400px) { 
+    .contenedor-grillas {
+        background-image: url(../images/bats2.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
     .pre-grilla {
         width: auto;
         padding: 2rem;
@@ -255,9 +267,10 @@
     }
     
     .grilla {
-        width: 100%;
+        width: 96%;
         height: 400px;
         padding: 1.5rem;
+        /* overflow-X: hidden; */
     
     }
     
