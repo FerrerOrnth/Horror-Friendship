@@ -13,13 +13,17 @@
         <link rel="stylesheet" href="css/grilla.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="js/banner.js"></script>
+        <script src="js/buscador.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat&family=Emilys+Candy&family=Fredericka+the+Great&family=Luckiest+Guy&family=MedievalSharp&family=RocknRoll+One&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     
-    <!-- <script src="/js/banner.js"></script> -->
     <title>Horror friendship</title>
     <link rel="icon" type="image/x-icon" href="images/Horror Friendship.png">
+    
+    <!-- /SCRIPT PARA DIVS SECCION PREGUNTAS --> 
     <script languague="javascript">
         function mostrar() {
             div = document.getElementById('flotante');
@@ -50,6 +54,9 @@
                 div.style.display = 'none';
         }
     </script>
+    
+
+
     </head>
     <body>
         <header class="header-principal">
@@ -58,11 +65,10 @@
                     <a href="index.html"><img class="header-logo" src="images/Horror Friendship.png" alt="logo fantasma"></a>
                     <p class="texto-logo"><span class="horror">Horror</span>friendship</p>
                     <div class="barra-busqueda" id="barra-baja">
-                        <input class="busqueda-input" type="text" placeholder="¿Que booscas?" data-buscador>
-                        <img class="header-ojo" src="images/bleeding-eye-icon-original.svg" alt="ojo">
+                        <input class="busqueda-input" id="buscador" type="text" placeholder="¿Que booscas?" data-buscador>
+                        <img class="header-ojo" id="buscar" src="images/bleeding-eye-icon-original.svg" alt="ojo">
                     </div> 
-                    <img id="lupa" src="images/bleeding-eye-icon-original.svg" title="Buscar" alt="ojo">
-                    <!-- <i class="fa-solid fa-magnifying-glass" id="lupa" ></i> -->
+                    <img id="lupa" class="buscar" src="images/bleeding-eye-icon-original.svg" title="Buscar" alt="ojo">
                     <div class="login">
                         <button class="boton-login">
                             <a href="login.html">Login</a>
@@ -72,13 +78,27 @@
             </div>
         </header>
         <div class="banner">
-            <div class="contenido-banner">
+            <p class="parrafo-relleno">This is your last chance. After this, there is no turning back.</p>
+            <div class="contenido-banner" id="item-1">
                 <h1 class="titulo-banner">¿Le temes a los monstruos?</h1>
                 <h2 class="sub-banner">Porque no conoces a uno!</h2>
                 <p class="parrafo-banner">El cine y la literatura nos difaman! Podemos ser amigables, jugar, divertirnos, hacer la tarea, salir de fiesta y mucho mas!!</p>
-                <button class="boton-promocion"><a href="#rentamonster">Rent a Monster</a></button>
+                <button class="boton-promocion"><a href="rentamonster.html">Rent a Monster</a></button>           
+            </div>
+            <div class="contenido-banner" id="item-2">
+                <h1 class="titulo-banner">Un fantasma te necesita...</h1>
+                <h2 class="sub-banner">Y tú necesitas un fantasma!</h2>
+                <p class="parrafo-banner">¿Sabes cuantos fantasmas viven en casas abandonadas sin nadie a quien asustar? Haz algo ahora!</p>
+                <button class="boton-promocion"><a href="adoptaghost.html">Adopt a Ghost</a></button>
+            </div>
+            <div class="contenido-banner" id="item-3">
+                <h1 class="titulo-banner">¿Buscas objetos especiales?</h1>
+                <h2 class="sub-banner">Visita nuestra tienda para encontrar los mejores!</h2>
+                <p class="parrafo-banner">Te traemos productos enteramente de industria monstruosa y exquisito diseño.</p>
+                <button class="boton-promocion"><a href="productos.html">Ver productos</a></button>
             </div>
         </div>
+                        <!-- SECCION PREGUNTAS  -->
         <div class="preguntas-grilla">
             <div class="iconos-preguntas" id="preguntas1">
                 <img class="icono-preguntas" src="images/zomb.png">
@@ -94,8 +114,9 @@
                 <p class="texto-preguntas"><a href="javascript:mostrar2(); cerrar1(); cerrar()">¿Qué es Adopt a Ghost?</a></p>
             </div>    
         </div>
+                            <!-- DIVS FLOTANTES SECCION PREGUNTAS -->
         <div id="flotante" style="display:none;">
-            <p class="letra-inicial" >Sabemos que el cine y la literatura clásica nos han representado históricamente como seres indeseables, viles, crueles y fuera de control... es por esto que la humanidad nos teme y nos combate. <span class="injusticia">Es una injusticia</span><span class="admiracion">!!</span><br> Para poder demostrar nuestro verdadero valor y capacidades como miembros útiles y respetados de la sociedad es que decidimos agrupar nuestros diferentes <span class="huestes" >ejércitos</span>... ehh... <span class="injusticia">comunidades</span><span class="admiracion">!!</span>, agrupar nuestras diferentes <span class="comunidades">comunidades</span> y fundar <span class="injusticia">Horror Friendship</span>, una liga dedicada a ofrecer diversos servicios a cambio de una pequeña cuota según el servicio requerido. Además comercializamos productos impresos artesanalmente, pensados para cubrir necesidades estéticas y funcionales, temáticos y acordes con nuestro inmejorable gusto. Creemos que son imprescindibles para cualquier humano como tú, que estás ahí leyendo esto en lugar de ir a comprarlos inmediatamente!</p>
+            <p class="letra-inicial" >Sabemos que el cine y la literatura clásica nos han representado históricamente como seres indeseables, viles, crueles y fuera de control... es por esto que la humanidad nos teme y nos combate. <span class="injusticia">Es una injusticia</span><span class="admiracion">!!</span><br> Para poder demostrar nuestro verdadero valor y capacidades como miembros útiles y respetados de la sociedad es que decidimos agrupar nuestros diferentes <span class="huestes" >ejércitos</span>... ehh... <span >comunidades!!</span>, agrupar nuestras diferentes <span class="comunidades">comunidades</span> y fundar <span class="injusticia">Horror Friendship</span>, una liga dedicada a ofrecer diversos servicios a cambio de una pequeña cuota según el servicio requerido. Además comercializamos productos impresos artesanalmente, pensados para cubrir necesidades estéticas y funcionales, temáticos y acordes con nuestro inmejorable gusto. Creemos que son imprescindibles para cualquier humano como tú, que estás ahí leyendo esto en lugar de ir a comprarlos inmediatamente!</p>
             <a id="cerrar" href="javascript:cerrar();">Cerrar</a>
         </div>
         <div id="flotante2" style="display:none;">
@@ -110,103 +131,97 @@
             <div class="grilla">
                 <section id="rentamonster">
                     <div class="pre-grilla">
-                    <h3 class="h3-grilla">Rent a Monster</h3>
-                    <a class="ver-todo" href="rentamonster.html">Ver todo</a>
-                    <img class="dedo" src="images/Dedo.png">
-                </div>
-                <div class="productos">
-                    <div class="producto">
-                        <img class="foto-producto" src="images/vamp.png">
-                        <p class="nombre-producto">Vampiro Gustav anima tu fiesta</p>
-                        <p class="precio-producto">$800.-</p>
-                        <a class="ver-producto" href="#" >Ver servicio</a>    
+                        <h3 class="h3-grilla">Rent a Monster</h3>
+                        <a class="ver-todo" href="rentamonster.html">Ver todo</a>
+                        <img class="dedo" src="images/Dedo.png">
                     </div>
-                    <div class="producto">
-                        <img class="foto-producto" src="images/zombie.png">
-                        <p class="nombre-producto">Cena y catarsis con zombie vegano</p>
-                        <p class="precio-producto">$800.-</p>
-                        <a class="ver-producto" href="#">Ver servicio</a>    
+                    <div class="productos">
+                        <div class="producto">
+                            <img class="foto-producto" src="images/vamp.png">
+                            <p class="nombre-producto">Vampiro Gustav anima tu fiesta</p>
+                            <p class="precio-producto">$800.-</p>
+                            <a class="ver-producto" href="#" >Ver servicio</a>    
+                        </div>
+                        <div class="producto">
+                            <img class="foto-producto" src="images/zombie.png">
+                            <p class="nombre-producto">Cena y catarsis con zombie vegano</p>
+                            <p class="precio-producto">$800.-</p>
+                            <a class="ver-producto" href="#">Ver servicio</a>    
+                        </div>
+                        <div class="producto">
+                            <img class="foto-producto" src="images/Banshees.png">
+                            <p class="nombre-producto">Karaoke con las talentosas Banshees</p>
+                            <p class="precio-producto">$800.-</p>
+                            <a class="ver-producto" href="#">Ver servicio</a>    
+                        </div>
+                        <div class="producto">
+                            <img class="foto-producto" src="images/Lobizon.png">
+                            <p class="nombre-producto">Brilla en las pistas con las clases de Wolfgang</p>
+                            <p class="precio-producto">$800.-</p>
+                            <a class="ver-producto" href="#">Ver servicio</a>     
+                        </div>
+                        <div class="producto">
+                            <img class="foto-producto" src="images/Bruja.png">
+                            <p class="nombre-producto">Bar tender Olga, tragos inolvidables</p>
+                            <p class="precio-producto">$800.-</p>
+                            <a class="ver-producto" href="#">Ver servicio</a>    
+                        </div>
+                        <div class="producto">
+                            <img class="foto-producto" src="images/Frank.png">
+                            <p class="nombre-producto">Aprende mecánica avanzada con Frank</p>
+                            <p class="precio-producto">$800.-</p>
+                            <a class="ver-producto" href="#">Ver servicio</a>      
+                        </div>
                     </div>
-                    <div class="producto">
-                        <img class="foto-producto" src="images/Banshees.png">
-                        <p class="nombre-producto">Karaoke con las talentosas Banshees</p>
-                        <p class="precio-producto">$800.-</p>
-                        <a class="ver-producto" href="#">Ver servicio</a>    
-                    </div>
-                    <div class="producto">
-                        <img class="foto-producto" src="images/Lobizon.png">
-                        <p class="nombre-producto">Brilla en las pistas con las clases de Wolfgang</p>
-                        <p class="precio-producto">$800.-</p>
-                        <a class="ver-producto" href="#">Ver servicio</a>     
-                    </div>
-                    <div class="producto">
-                        <img class="foto-producto" src="images/Bruja.png">
-                        <p class="nombre-producto">Bar tender Olga, tragos inolvidables</p>
-                        <p class="precio-producto">$800.-</p>
-                        <a class="ver-producto" href="#">Ver servicio</a>    
-                    </div>
-                    <div class="producto">
-                        <img class="foto-producto" src="images/Frank.png">
-                        <p class="nombre-producto">Aprende mecánica avanzada con Frank</p>
-                        <p class="precio-producto">$800.-</p>
-                        <a class="ver-producto" href="#">Ver servicio</a>      
-                    </div>
-                </div>
-                </section>
-                
+                </section>    
             </div>
             <div class="grilla">
-                <div class="pre-grilla">
-                    <h3 class="h3-grilla">Adopt a ghost</h3>
-                    <a class="ver-todo" href="adoptaghost.html">Ver todo</a>
-                    <img class="dedo" src="images/Dedo.png">
-                    <!-- <i class="fa-regular fa-hand-point-right"></i> -->
-                </div>
-                <div class="productos">
-                    <div class="producto">
-                        <img class="foto-producto" src="images/ghost.png">
-                        <p class="nombre-producto">Adopt Martin</p>
-                        <!-- <p class="precio-producto">$800.-</p> -->
-                        <a class="ver-producto" href="producto-individual.html" >Ver + info</a>    
+                <section id="adoptaghost">
+                    <div class="pre-grilla">
+                        <h3 class="h3-grilla">Adopt a ghost</h3>
+                        <a class="ver-todo" href="adoptaghost.html">Ver todo</a>
+                        <img class="dedo" src="images/Dedo.png">
                     </div>
-                    <div class="producto">
-                        <img class="foto-producto" src="images/Adopt a Ghost/Thomas.png">
-                        <p class="nombre-producto">Adopt Thomas</p>
-                        <!-- <p class="precio-producto">$800.-</p> -->
-                        <a class="ver-producto" href="#">Ver + info</a>    
+                    <div class="productos">
+                        <div class="producto">
+                            <img class="foto-producto" src="images/ghost.png">
+                            <p class="nombre-producto">Adopt Martin</p>
+                            <a class="ver-producto" href="producto-individual.html" >Ver + info</a>    
+                        </div>
+                        <div class="producto">
+                            <img class="foto-producto" src="images/Adopt a Ghost/Thomas.png">
+                            <p class="nombre-producto">Adopt Thomas</p>
+                            <a class="ver-producto" href="#">Ver + info</a>    
+                        </div>
+                        <div class="producto">
+                            <img class="foto-producto" src="images/Adopt a Ghost/Gino.png">
+                            <p class="nombre-producto">Adopt Gino</p>
+                            <a class="ver-producto" href="#">Ver + info</a>    
+                        </div>
+                        <div class="producto">
+                            <img class="foto-producto" src="images/Adopt a Ghost/Lucas.png">
+                            <p class="nombre-producto">Adopt Lucas</p>
+                            <a class="ver-producto" href="#">Ver + info</a>     
+                        </div>
+                        <div class="producto">
+                            <img class="foto-producto" src="images/Adopt a Ghost/Moona.png">
+                            <p class="nombre-producto">Adopt Moona</p>
+                            <a class="ver-producto" href="#">Ver + info</a>      
+                        </div>
+                        <div class="producto">
+                            <img class="foto-producto" src="images/Adopt a Ghost/Rama.png">
+                            <p class="nombre-producto">Adopt Rama</p>
+                            <a class="ver-producto" href="#">Ver + info</a>    
+                        </div>
                     </div>
-                    <div class="producto">
-                        <img class="foto-producto" src="images/Adopt a Ghost/Gino.png">
-                        <p class="nombre-producto">Adopt Gino</p>
-                        <!-- <p class="precio-producto">$800.-</p> -->
-                        <a class="ver-producto" href="#">Ver + info</a>    
-                    </div>
-                    <div class="producto">
-                        <img class="foto-producto" src="images/Adopt a Ghost/Lucas.png">
-                        <p class="nombre-producto">Adopt Lucas</p>
-                        <!-- <p class="precio-producto">$800.-</p> -->
-                        <a class="ver-producto" href="#">Ver + info</a>     
-                    </div>
-                    <div class="producto">
-                        <img class="foto-producto" src="images/Adopt a Ghost/Moona.png">
-                        <p class="nombre-producto">Adopt Moona</p>
-                        <!-- <p class="precio-producto">$800.-</p> -->
-                        <a class="ver-producto" href="#">Ver + info</a>      
-                    </div>
-                    <div class="producto">
-                        <img class="foto-producto" src="images/Adopt a Ghost/Rama.png">
-                        <p class="nombre-producto">Adopt Rama</p>
-                        <!-- <p class="precio-producto">$800.-</p> -->
-                        <a class="ver-producto" href="#">Ver + info</a>    
-                    </div>
-                </div>
+                </section>
+                
             </div>       
             <div class="grilla">
                 <div class="pre-grilla">
                     <h3 class="h3-grilla">Productos que necesitas</h3>
                     <a class="ver-todo" href="productos.html">Ver todo</a>
                     <img class="dedo" src="images/Dedo.png">
-                    <!-- <i class="fa-regular fa-hand-point-right"></i> -->
                 </div>
                 <div class="productos">
                     <div class="producto">
@@ -257,24 +272,33 @@
                 </div>
                 <div class="enlaces-footer">
                     <ul class="enlaces-footer">
-                        <li class="enlace-footer">
-                            <a href="#">Quienes somos</a>
+                        <li class="enlace-footer" id="tooltip"> 
+                            <div class="tooltip"><a href="#">Quienes somos</a>
+                                <span class="tooltiptext" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;">Claro... porque no somos NADA famosos...</span>
+                            </div>
                         </li>
                         <li class="enlace-footer">
-                            <a href="#">Nuestras tiendas</a>
+                            <a href="administrador-login.html">Soy administrador</a>
                         </li>
-                        <li class="enlace-footer">
-                            <a href="#">Programa de fidelidad</a>
+                        <li class="enlace-footer2" id="tooltip"> 
+                            <div class="tooltip"><a href="#">Busco pareja monstruo</a>
+                                <span class="tooltiptext" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;">No tienes espejo, ¿verdad?</span>
+                            </div>
                         </li>
- 
-                        <li class="enlace-footer">
-                            <a href="#">Busco pareja monstruo</a>
+                        <li class="enlace-footer" id="tooltip"> 
+                            <div class="tooltip"><a href="#">Soy un fantasma sin casa</a>
+                                <span class="tooltiptext" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;">¿A quién quieres engañar?... Los fantasmas no tienen wi-fi...</span>
+                            </div>
                         </li>
-                        <li class="enlace-footer">
-                            <a href="#">Soy un fantasma sin casa</a>
+                        <li class="enlace-footer" id="tooltip"> 
+                            <div class="tooltip"><a href="#">Quiero presentar una queja</a>
+                                <span class="tooltiptext" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;">Vaya! que valiente!... Hazlo en el formulario  <br> No olvides poner tu dirección.   </span>
+                            </div>
                         </li>
-                        <li class="enlace-footer">
-                            <a href="#">Código de conducta fantasmal</a>
+                        <li class="enlace-footer" id="tooltip"> 
+                            <div class="tooltip"><a href="#">Código de conducta fantasmal</a>
+                                <span class="tooltiptext" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;">El código estipula que los fantasmas harán siempre lo que ellos quieran.</span>
+                            </div>
                         </li>
 
                     </ul>
@@ -283,8 +307,8 @@
                     <form class="formulario-footer">
                         <h3 class="titulo-contacto">Habla con nosotros. <br class="salto">La mayoría mordemos.</h3>
                         <input type="text" id="nombre" name="nombre" required minlength="4" maxlength="8" size="10" placeholder="Escribe tu nombre... Ej.: 'Juan' &#XF5a5;" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;"/>
-                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Que quieres?" font-weight: 900;
-                        style="font-family:'MedievalSharp', cursive, FontAwesome"></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="¿Que quieres?" font-weight: 900;
+                        style="font-family:'MedievalSharp', cursive, FontAwesome" minlength="10" required></textarea>
                         <button class="enviar">Enviar mensaje</button>
                     </form>
                 </div>
@@ -292,6 +316,17 @@
             <div class="creditos-footer">
                 <p>Sitio desarrollado con <i class="fa-solid fa-heart" title="amor"></i> y <i class="fa-solid fa-fire" title="pasión"></i> por Claudio Ferrer Ornth &copy;<script>document.write(new Date().getFullYear());</script></p>
             </div>
-        </footer>              
+        </footer> 
+        <!-- <script>
+            const buscador = document.querySelector('#buscador');
+            const buscar = document.querySelector('#buscar');
+    
+            const filtrar = ()=>{
+                console.log(buscador.value);
+            }
+    
+            buscar.addEventListener('click', filtrar);
+        </script> -->
+        
     </body>
 </html>

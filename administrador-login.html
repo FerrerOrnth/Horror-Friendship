@@ -15,12 +15,14 @@
         <link rel="stylesheet" href="css/productos.css">
         <link rel="stylesheet" href="css/login.css">
         <link rel="stylesheet" href="css/administrador.css">
+        <link rel="stylesheet" href="css/administrador-login.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat&family=Emilys+Candy&family=Fredericka+the+Great&family=Luckiest+Guy&family=MedievalSharp&family=RocknRoll+One&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     
-    <script src="/js/buscador.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/login.js"></script>
     <title>Horror friendship</title>
     <link rel="icon" type="image/x-icon" href="images/Horror Friendship.png">
     </head>
@@ -45,43 +47,12 @@
         </div>
     </header>
     <body>
-        <div class="login-general">
-            <h3 class="iniciar-sesion" id="titulo-administrador" >Agregar entrada</h3>
-            <form class="formulario-administrador" id="data-form" dataform>
-                <div class="filas">
-                    <div class="container-input">
-                        <input type="file" name="files" id="files" class="inputfile inputfiles" data-multiple-caption="{count} archivos seleccionados" multiple />
-                        <label for="files">
-                            <figure>
-                                <img src="images/polaroid.png">
-                            </figure>
-                            <span class="texto-imagen">Seleccionar imagen</span>
-                        </label>
-                    </div>
-                </div>  
-                <div class="filas">
-                    <select onfocus='this.size=4;' onblur='this.size=0;' 
-                    onchange='this.size=1; this.blur();' class="fila" id="select" required categoria style="font-family:'MedievalSharp', cursive";/>
-                        <option> Elige una categoría: </option>
-                        <option value="1">Rent a Monster</option>
-                        <option value="2">Adopt a Ghost</option>
-                        <option value="3">Producto individual</option>
-                    </select>
-                </div>
-                <div class="filas">
-                    <input type="text" class="fila" id="nombre-admin" nombreproducto placeholder="Nombre del producto/servicio/fantasma" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
-                </div>
-                <div class="filas">
-                    <input type="number" class="fila" precio id="precio" placeholder="Ingrese el precio del producto o servicio. (Vacío si es fantasma)."  min="0" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
-                </div>
-                <div class="filas">
-                    <textarea name="textarea" class="fila" descripcion id="text-area" rows="4" cols="50" placeholder="Descripción del producto/servicio/fantasma" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/></textarea>
-                </div>
-                <div class="filas">
-                    <button type="submit" class="entrar" id="agregar-producto">
-                    <!-- <a href="#">Agregar entrada</a> -->
-                    </button>
-                </div>
+        <div class="login-administrador">
+            <form class="formulario-login-administrador">
+                <h3 class="titulo-login-administrador">Ingresa tus credenciales de administrador</h3>
+                <input type="text" id="usuario-administrador" name="nombre" required minlength="4" maxlength="8" size="10" placeholder="Escribe tu usuario administrador" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;"/>
+                <input type="password" id="pass-administrador" name="password" minlength="8" placeholder="Escribe tu contraseña" required>
+                <button class="login-admin" onclick="loguear()" >Ingresar</button>
             </form>
         </div>
         <footer>
@@ -96,7 +67,7 @@
                             <a href="#">Quienes somos</a>
                         </li>
                         <li class="enlace-footer">
-                            <a href="administrador-login.html">Soy administrador</a>
+                            <a href="#">Soy administrador</a>
                         </li>
                         <li class="enlace-footer">
                             <a href="#">Programa de fidelidad</a>
@@ -119,18 +90,16 @@
                         <h3 class="titulo-contacto">Habla con nosotros. La mayoría mordemos.</h3>
                         <input type="text" id="nombre" name="nombre" required minlength="4" maxlength="8" size="10" placeholder="Escribe tu nombre... Ej.: 'Juan' &#XF5a5;" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;"/>
                         <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Que quieres?" font-weight: 900;
-                        style="font-family:'MedievalSharp', cursive, FontAwesome" minlength="10" required></textarea>
+                        style="font-family:'MedievalSharp', cursive, FontAwesome"></textarea>
                         <button class="enviar">Enviar mensaje</button>
                     </form>
                 </div>
             </div>
             <div class="creditos-footer">
-                <p>Sitio desarrollado con <i class="fa-solid fa-heart" title="amor"></i> y <i class="fa-solid fa-fire" title="pasión"></i> por Claudio Ferrer Ornth</p>
-                <!-- &copy;<script>document.write(new Date().getFullYear());</script> -->
+                <p>Sitio desarrollado con <i class="fa-solid fa-heart" title="amor"></i> y <i class="fa-solid fa-fire" title="pasión"></i> por Claudio Ferrer Ornth &copy;<script>document.write(new Date().getFullYear());</script></p>
             </div>
         </footer>
-        <script src="js/buscador.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="module" src="controllers/registro.controller.js"></script>          
+        <script src="/js/buscador.js"></script>
+        <script src="js/login.js"></script>          
     </body>
 </html>    
