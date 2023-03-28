@@ -101,6 +101,20 @@
 
 }
 
+.dedos {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    /* text-align: center;
+    align-items: center; */
+    justify-content: center;
+}
+
+.enlaces-dedos {
+    margin: 0 6rem;
+}
+
+
 /* MEDIA */
 
 @media (min-width: 320px) and (max-width: 768px) {

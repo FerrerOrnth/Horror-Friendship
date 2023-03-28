@@ -108,34 +108,43 @@
                 </div>
                 <div class="enlaces-footer">
                     <ul class="enlaces-footer">
-                        <li class="enlace-footer">
-                            <a href="#">Quienes somos</a>
+                        <li class="enlace-footer" id="tooltip"> 
+                            <div class="tooltip"><a href="#">Quienes somos</a>
+                                <span class="tooltiptext" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;">Claro... porque no somos NADA famosos...</span>
+                            </div>
                         </li>
                         <li class="enlace-footer">
-                            <a href="#">Soy administrador</a>
+                            <a href="administrador-login.html">Soy administrador</a>
                         </li>
-                        <li class="enlace-footer">
-                            <a href="#">Programa de fidelidad</a>
+                        <li class="enlace-footer2" id="tooltip"> 
+                            <div class="tooltip"><a href="#">Busco pareja monstruo</a>
+                                <span class="tooltiptext" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;">No tienes espejo, ¿verdad?</span>
+                            </div>
                         </li>
- 
-                        <li class="enlace-footer">
-                            <a href="#">Busco pareja monstruo</a>
+                        <li class="enlace-footer" id="tooltip"> 
+                            <div class="tooltip"><a href="#">Soy un fantasma sin casa</a>
+                                <span class="tooltiptext" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;">¿A quién quieres engañar?... Los fantasmas no tienen wi-fi...</span>
+                            </div>
                         </li>
-                        <li class="enlace-footer">
-                            <a href="#">Soy un fantasma sin casa</a>
+                        <li class="enlace-footer" id="tooltip"> 
+                            <div class="tooltip"><a href="#">Quiero presentar una queja</a>
+                                <span class="tooltiptext" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;">Vaya! que valiente!... Hazlo en el formulario  <br> No olvides poner tu dirección.   </span>
+                            </div>
                         </li>
-                        <li class="enlace-footer">
-                            <a href="#">Código de conducta fantasmal</a>
+                        <li class="enlace-footer" id="tooltip"> 
+                            <div class="tooltip"><a href="#">Código de conducta fantasmal</a>
+                                <span class="tooltiptext" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;">El código estipula que los fantasmas harán siempre lo que ellos quieran.</span>
+                            </div>
                         </li>
 
                     </ul>
                 </div>
                 <div class="contacto-footer">
                     <form class="formulario-footer">
-                        <h3 class="titulo-contacto">Habla con nosotros. La mayoría mordemos.</h3>
+                        <h3 class="titulo-contacto">Habla con nosotros. <br class="salto">La mayoría mordemos.</h3>
                         <input type="text" id="nombre" name="nombre" required minlength="4" maxlength="8" size="10" placeholder="Escribe tu nombre... Ej.: 'Juan' &#XF5a5;" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;"/>
-                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Que quieres?" font-weight: 900;
-                        style="font-family:'MedievalSharp', cursive, FontAwesome"></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="¿Que quieres?" font-weight: 900;
+                        style="font-family:'MedievalSharp', cursive, FontAwesome" minlength="10" required></textarea>
                         <button class="enviar">Enviar mensaje</button>
                     </form>
                 </div>
