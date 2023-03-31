@@ -19,7 +19,7 @@
     margin: auto;
 }
 
-#grilla-productos {
+#grilla-productos, #grilla-productos2 {
     height: auto;
     padding-top: 2rem;
     display: grid;
@@ -90,7 +90,7 @@
         width: 90%;
     }
     
-    #grilla-productos {
+    #grilla-productos, #grilla-productos2 {
         padding-top: 1rem;
     }
 
@@ -127,7 +127,7 @@
         padding: .5rem;
     }
     
-    #grilla-productos {
+    #grilla-productos, #grilla-productos2 {
         padding-top: 1rem;
     }
 
@@ -179,7 +179,7 @@
         padding: .5rem;
     }
     
-    #grilla-productos {
+    #grilla-productos, #grilla-productos2 {
         padding-top: 1rem;
     }
 
@@ -207,7 +207,7 @@
         padding: .5rem;
     }
     
-    #grilla-productos {
+    #grilla-productos, #grilla-productos2 {
         padding-top: 1rem;
     }
 

@@ -14,13 +14,13 @@
         <link rel="stylesheet" href="css/grilla.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/productos.css">
+        <link rel="stylesheet" href="css/burga.css">
         <link rel="stylesheet" href="css/producto-individual.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat&family=Emilys+Candy&family=Fredericka+the+Great&family=Luckiest+Guy&family=MedievalSharp&family=RocknRoll+One&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    
-    <!-- <script src="/js/banner.js"></script> -->
+    <script src="/js/burga.js"></script>
     <title>Horror friendship</title>
     <link rel="icon" type="image/x-icon" href="images/Horror Friendship.png">
     </head>
@@ -40,7 +40,19 @@
         </div>
     </header>
     <body>
-        <div class="contenedor-grillas">    
+        <div class="flier">
+            <img src="/images/fantasma.png">
+        </div>
+        <div class="x">
+            <img class="y" id="fantasma" src="/images/fantasma.png">
+        </div>
+        <div class="a">
+            <img class="b" id="fantasma2" src="/images/fantasma.png">
+        </div>
+        <div class="c">
+            <img class="d" id="fantasma3" src="/images/fantasma.png">
+        </div>
+        <div class="contenedor-grillas" id="contenedor-grillas-fantasmas">    
             <div class="grilla" id="grilla-productos">
                 <div class="pre-grilla" id="pregrilla-productos" >
                     <h3 class="h3-grilla" id="titulo-productos" >Fantasmas en adopción</h3>
@@ -49,7 +61,7 @@
                     <div class="producto">
                         <img class="foto-producto" src="images/ghost.png">
                         <p class="nombre-producto">Adopt Martin</p>
-                        <a class="ver-producto" href="#" >Ver candidato</a>    
+                        <a class="ver-producto" href="producto-individual.html" >Ver candidato</a>    
                     </div>
                     <div class="producto">
                         <img class="foto-producto" src="images/Adopt a Ghost/Thomas.png">
@@ -108,6 +120,16 @@
                     </div>
                 </div>
             </div>
+            <div class="dedos">
+                <div class="enlaces-dedos" id="izquierda" >
+                    <img class="dedo" id="dedo" src="images/Dedoizq.png">
+                    <a class="ver-todo" id="vertodo" href="rentamonster.html">Rent a Monster</a>
+                </div>
+                <div class="enlaces-dedos" id="derecha" >
+                    <a class="ver-todo" id="vertodo" href="productos.html">Ver Productos</a>
+                    <img class="dedo" id="dedo" src="images/Dedo.png">
+                </div>    
+            </div>
         </div>
         <footer>
             <div class="footer-general">
@@ -145,7 +167,6 @@
                                 <span class="tooltiptext" style="font-family:'MedievalSharp', cursive, FontAwesome" style="font-weight: 900;">El código estipula que los fantasmas harán siempre lo que ellos quieran.</span>
                             </div>
                         </li>
-
                     </ul>
                 </div>
                 <div class="contacto-footer">

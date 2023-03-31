@@ -1,11 +1,27 @@
 {
   "perfil": [
     {
-      "categoria": "1",
-      "nombreproducto": "Trapo",
-      "precioproducto": "345",
-      "descripcion": "muy lindo",
-      "id": 1
+      "imagen": "C:\\fakepath\\Mi proyecto2.png",
+      "categoria": "2",
+      "nombre": "trapitotitos",
+      "precio": "112",
+      "descripcion": "holaaaaauyuy",
+      "id": "6091e2fc-d32c-4bf2-a1b3-889a5ac7ea84"
+    },
+    {
+      "imagen": "C:\\fakepath\\DALL·E 2023-03-11 09.07.24 - A comic book cover of a smiling and friendly zombie eating a salad at a dinner table with a bunch of flowers.png",
+      "categoria": "2",
+      "nombre": "piring",
+      "precio": "5",
+      "descripcion": "jjjj",
+      "id": "073f7ab0-e4ba-4e46-955d-f49386196d02"
+    },
+    {
+      "categoria": "2",
+      "nombre": "trapitotitos2",
+      "precio": "3333",
+      "descripcion": "3333",
+      "id": "abedc18e-9761-49c9-99b8-4a19905b23b7"
     }
   ]
 }

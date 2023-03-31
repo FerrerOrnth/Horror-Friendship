@@ -46,40 +46,40 @@
     </header>
     <body>
         <div class="login-general">
-            <h3 class="iniciar-sesion" id="titulo-administrador" >Agregar entrada</h3>
-            <form class="formulario-administrador" id="data-form" dataform>
+            <h3 class="iniciar-sesion" id="titulo-administrador" >Editar entrada</h3>
+            <form class="formulario-administrador" id="data-form" editform>
                 <div class="filas">
                     <div class="container-input">
-                        <input type="file" name="files" id="files" class="inputfile inputfiles" imagen data-multiple-caption="{count} archivos seleccionados" multiple />
+                        <input type="file" name="files" id="files" class="inputfile inputfiles" editar-imagen data-multiple-caption="{count} archivos seleccionados" multiple />
                         <label for="files">
                             <figure>
                                 <img src="images/polaroid.png">
                             </figure>
-                            <span class="texto-imagen">Seleccionar imagen</span>
+                            <span class="texto-imagen">Imagen</span>
                         </label>
                     </div>
                 </div>  
                 <div class="filas">
                     <select onfocus='this.size=4;' onblur='this.size=0;' 
-                    onchange='this.size=1; this.blur();' class="fila" id="select" required categoria style="font-family:'MedievalSharp', cursive";/>
-                        <option> Elige una categoría: </option>
+                    onchange='this.size=1; this.blur();' class="fila" id="select" required editar-categoria style="font-family:'MedievalSharp', cursive";/>
+                        <option> Categoría: </option>
                         <option value="1">Rent a Monster</option>
                         <option value="2">Adopt a Ghost</option>
                         <option value="3">Producto individual</option>
                     </select>
                 </div>
                 <div class="filas">
-                    <input type="text" class="fila" id="nombre-admin" nombre placeholder="Nombre del producto/servicio/fantasma" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
+                    <input type="text" class="fila" id="nombre-admin" editar-nombre placeholder="Nombre del producto/servicio/fantasma" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
                 </div>
                 <div class="filas">
-                    <input type="number" class="fila" precio id="precio" placeholder="Ingrese el precio del producto o servicio. (Vacío si es fantasma)."  min="0" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
+                    <input type="number" class="fila" editar-precio id="precio" placeholder="Ingrese el precio del producto o servicio. (Vacío si es fantasma)."  min="0" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
                 </div>
                 <div class="filas">
-                    <textarea name="textarea" class="fila" descripcion id="text-area" rows="4" cols="50" placeholder="Descripción del producto/servicio/fantasma" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/></textarea>
+                    <textarea name="textarea" class="fila" editar-descripcion id="text-area" rows="4" cols="50" placeholder="Descripción del producto/servicio/fantasma" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/></textarea>
                 </div>
                 <div class="filas">
                     <button type="submit" class="entrar" id="agregar-producto">
-                    <p>Agregar entrada</p>
+                    <p>Editar entrada</p>
                     </button>
                 </div>
             </form>
@@ -139,6 +139,7 @@
         </footer> 
         <script src="js/buscador.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="module" src="controllers/registro.controller.js"></script>          
+        <!-- <script type="module" src="controllers/registro.controller.js"></script>  -->
+        <script type="module" src="controllers/actualizar-controller.js"></script>          
     </body>
 </html>    

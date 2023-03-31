@@ -12,9 +12,11 @@
         <link rel="stylesheet" href="css/preguntas.css">
         <link rel="stylesheet" href="css/grilla.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/burga.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <script src="js/banner.js"></script>
         <script src="js/buscador.js"></script>
+        <script src="js/burga.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat&family=Emilys+Candy&family=Fredericka+the+Great&family=Luckiest+Guy&family=MedievalSharp&family=RocknRoll+One&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -77,6 +79,25 @@
                 </div>    
             </div>
         </header>
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <img class="visible" src="images/hamburguesa1.png">
+                    <img class="visible2" src="images/hamburguesa2.png">
+                </div>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="rentamonster.html">Rent a Monster</a></li>
+                        <li><a href="adoptaghost.html">Adopt a Ghost</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="administrador.html">Administrador</a></li>
+                    </ul>
+                </nav> 
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+                <!-- <div class="flier">
+                    <img src="/images/fantasma.png">
+                </div> -->
         <div class="banner">
             <p class="parrafo-relleno">This is your last chance. After this, there is no turning back.</p>
             <div class="contenido-banner" id="item-1">
@@ -110,7 +131,7 @@
                 <p class="texto-preguntas"><a href="javascript:mostrar1(); cerrar(); cerrar2()">¿Qué es Rent a Monster?</a></p>
             </div>
             <div class="iconos-preguntas" id="preguntas3">
-                <img class="icono-preguntas" src="images/fantasma.png">
+                <img class="icono-preguntas" src="images/fantasmaindex.png">
                 <p class="texto-preguntas"><a href="javascript:mostrar2(); cerrar1(); cerrar()">¿Qué es Adopt a Ghost?</a></p>
             </div>    
         </div>
