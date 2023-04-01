@@ -54,6 +54,10 @@
     vertical-align: center;
 }
 
+#dedos-individual {
+    margin-top: 4rem;
+}
+
 .fa-regular {
     color: red;
     margin-left: 10px;
@@ -345,6 +349,10 @@
         margin-top: 40px;
         /* margin-left: 3.5rem; */
         width: 80%;
+    }
+
+    h3-grilla-individual {
+        margin-top: 0;
     }
     
     .ver-todo {

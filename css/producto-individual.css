@@ -76,7 +76,28 @@
 
 }
 
-#grilla-productos-individual, #grilla-productos-individual {
+.adopt {
+    background-color: darkred;
+    width: auto;
+    margin-left: 1rem;
+    font-size: 1rem;
+    float: right;
+    /* font-family: 'MedievalSharp', cursive; */
+}
+
+.adopta {
+    text-decoration: none;
+    font-family: 'MedievalSharp', cursive;
+    color: white;
+}
+
+.adopt:hover {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+#grilla-productos-individual {
     width: 84%;
     padding-left: 8%;
     padding-right: 8%;
@@ -86,24 +107,48 @@
 #pregrilla-productos-individual {
     width: 100%;
     padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 #productos-individual {
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 100%;
     display: flex;
+}
+
+#h3-grilla-individual {
+    padding: 0;
+    width: 86%;
 }
 
 #producto-individual {
     justify-content: space-between;
 }
 
-#titulo-productos-individual {
-    width: 100%;
+/* #titulo-productos-individual {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.6rem;
+} */
+
+#dedo-individual {
+    width: 8%;
     margin-bottom: .6rem;
     padding: 0;
     margin: 0;
 }
+
+#ver-todo-individual {
+    margin-bottom: .6rem;
+    padding: 0;
+    margin: 0;
+    width: 12%;
+    justify-self: end;
+    justify-content: end;
+}
+
 
 #producto-individual img{
     width: 100%;
@@ -152,10 +197,10 @@
         margin-top: -1rem;
     }
 
-    #titulo-productos-individual {
+    /* #titulo-productos-individual {
         padding-top: 1rem;
         padding-left: 1rem;
-    }
+    } */
 
     #productos-individual {
         width: 100%;
@@ -171,6 +216,10 @@
     #grilla-productos-individual, #grilla-productos2-individual  {
         margin: 0;
         padding: 0;
+    }
+
+    #h3-grilla-individual {
+        padding-left: 1rem;
     }
 }
 
@@ -224,10 +273,18 @@
         margin-top: -1rem;
     }
 
-    #titulo-productos-individual {
-        padding-top: 1rem;
+    #pregrilla-individual {
+        padding: 0;
+    }
+
+    #h3-grilla-individual {
         padding-left: 1rem;
     }
+
+    /* #titulo-productos-individual {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    } */
 
     #productos-individual {
         width: 100%;
@@ -315,6 +372,10 @@
 
     }
 
+    #ver-todo-individual {
+        font-size: 1rem;;
+    }
+
 }
 
 @media (min-width: 900px) and (max-width: 1024px) {
@@ -343,7 +404,10 @@
         line-height: 1.4rem;
         max-height: 400px;
         overflow: scroll;
-      
     }
+
+    /* #productos-individual {
+        margin-top: 1rem;
+    } */
 }
 
