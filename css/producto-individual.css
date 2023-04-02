@@ -97,6 +97,21 @@
     font-weight: bold;
 }
 
+.intro-individual {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+}
+
+.precio-individual {
+    /* width: 50%; */
+    font-size: 1.5rem;
+}
+
+#boton-monster {
+    margin: 0 auto;
+}
+
 #grilla-productos-individual {
     width: 84%;
     padding-left: 8%;
