@@ -58,6 +58,11 @@
     background-color: red;
 }
 
+
+#prohibido {
+    cursor: not-allowed;
+}
+
 /* MEDIA */
 
 @media (min-width: 320px) and (max-width: 570px) {
