@@ -71,24 +71,17 @@
 
 @media (min-width: 320px) and (max-width: 570px) {
 
-    .contenido-banner {
+    /* .contenido-banner {
         padding: .5rem;
-    }
+    } */
     
     .titulo-banner {
-        font-size: 1.3rem;
-        /* text-align: center;
-        margin: 0 auto;
-        width: 100vw;
-        flex-wrap: wrap; */
-    
+        font-size: 1.3rem;    
     }
     
     .sub-banner {
         font-size: 1.2rem;
         margin-top: 16px;
-        /* width: 80%;
-        padding: 0; */
     }
     
     .parrafo-banner {
@@ -116,9 +109,9 @@
 }
 
 @media (min-width: 570px) and (max-width: 768px) {
-    .contenido-banner {
+    /* .contenido-banner {
         padding: .5rem;
-    }
+    } */
     
     .titulo-banner {
         font-size: 1.5rem;
