@@ -54,23 +54,36 @@
     padding: 0.5rem 6rem 6rem; 
     line-height: 1.7rem;
     font-size: 1.2rem;
+    column-count:2;
+    column-gap: 4rem;
+    column-rule: 2px solid darkred;
+    text-align: justify;
+    /* margin-bottom: 2rem; */
 }
 
-#flotante p, #flotante1 p, #flotante2 p {
+
+
+/* #flotante p, #flotante1 p, #flotante2 p {
     column-count:2;
     column-gap: 4rem;
     column-rule: 2px solid darkred;
     text-align: justify;
     margin-bottom: 2rem;
-}
+} */
 
-.letra-inicial::first-letter {
+/* .letra-inicial::first-letter {
     initial-letter: 3.5;
     font-family: 'MedievalSharp', cursive;
     padding: 1rem;
     border: 6px solid darkred;
     margin-right: 1rem;
     margin-top: 1.4rem;
+} */
+
+.first {
+    position: relative;
+    margin-right: 1rem;
+    float: left;
 }
 
 .injusticia {
@@ -94,15 +107,21 @@
     text-decoration: underline;
 }
 
-#cerrar {
-    width: 100%;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    font-family: 'MedievalSharp', cursive;
+.cerrar {
+    column-count:1;
     float: right;
     position: relative;
+    display: block;
+    margin-top: 4rem;
+}
+#cerrar {
+
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: block;
+    float: right;
+    font-family: 'MedievalSharp', cursive;
 }
 
 .letra-inicial a{
@@ -160,7 +179,7 @@
 
     }
     
-    #flotante p, #flotante1 p, #flotante2 p {
+    #flotante, #flotante1, #flotante2 {
         column-count:1;
         column-gap: .8rem;
         column-rule: none;
@@ -221,9 +240,6 @@
         padding: 1rem 2rem; 
         line-height: 1.1rem;
         font-size: 1rem;
-    }
-    
-    #flotante p, #flotante1 p, #flotante2 p {
         column-count:1;
         column-gap: .8rem;
         column-rule: none;
@@ -231,6 +247,15 @@
         text-align: justify;
         padding-bottom: 2rem;
     }
+    
+    /* #flotante p, #flotante1 p, #flotante2 p {
+        column-count:1;
+        column-gap: .8rem;
+        column-rule: none;
+        margin-bottom: .2rem;
+        text-align: justify;
+        padding-bottom: 2rem;
+    } */
     
     .letra-inicial::first-letter {
         initial-letter: 1.8;
@@ -263,9 +288,6 @@
         padding: 1rem 2rem; 
         line-height: 1.2rem;
         font-size: 1rem;
-    }
-    
-    #flotante p, #flotante1 p, #flotante2 p {
         column-count: 2;
         column-gap: 1.3rem;
         column-rule: 2px solid gray;
@@ -274,13 +296,22 @@
         padding-bottom: 2rem;
     }
     
-    .letra-inicial::first-letter {
+    /* #flotante p, #flotante1 p, #flotante2 p {
+        column-count: 2;
+        column-gap: 1.3rem;
+        column-rule: 2px solid gray;
+        margin-bottom: .2rem;
+        text-align: justify;
+        padding-bottom: 2rem;
+    } */
+    
+    /* .letra-inicial::first-letter {
         initial-letter: 1.6;
         padding: 1rem;
         border: 2px solid darkred;
         margin-right: .7rem;
         margin-top: 1.3rem;
-    }
+    } */
     
     .injusticia {
         font-size: .9rem;
