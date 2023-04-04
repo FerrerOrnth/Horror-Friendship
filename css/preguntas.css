@@ -111,7 +111,7 @@
 
 /* MEDIA */
 
-@media (min-width: 320px) and (max-width: 570px) {
+@media (min-width: 220px) and (max-width: 570px) {
     .preguntas-grilla {
         height: auto;
         display: flex;
@@ -157,6 +157,7 @@
         padding: 1rem 2rem; 
         line-height: 1.1rem;
         font-size: 1rem;
+
     }
     
     #flotante p, #flotante1 p, #flotante2 p {
@@ -169,7 +170,7 @@
     }
     
     .letra-inicial::first-letter {
-        initial-letter: 1.3;
+        initial-letter: .3;
         padding: .8rem;
         border: 2px solid darkred;
         margin-right: .3rem;
