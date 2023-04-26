@@ -1,17 +1,18 @@
-const listaClientes = () =>
-    fetch("http://localhost:3000/perfil").then((respuesta) => respuesta.json());
+const listaClientes = () => {
+    return fetch("http://localhost:3000/perfil").then((respuesta) => respuesta.json());
+};
 
-const crearProducto = ( categoria, nombre, precio, descripcion) => {
+const crearCliente = ( nombreFantasma, nombreAdoptante, fechaAdopcion, direccion) => {
     return fetch("http://localhost:3000/perfil", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({ categoria, nombre, precio, descripcion, id: uuid.v4() }),
+        body: JSON.stringify({ nombreFantasma, nombreAdoptante, fechaAdopcion, direccion, id: uuid.v4() }),
     });
 };
 
-const eliminarCliente =  (id) => {
+const eliminarCliente = (id) => {
     return fetch(`http://localhost:3000/perfil/${id}`, {
         method: "DELETE"
     });
@@ -22,13 +23,13 @@ const detalleCliente = (id) => {
     );
 };
 
-const actualizarCliente = ( categoria, nombre, precio, descripcion, id) => {
+const actualizarCliente = ( nombreFantasma, nombreAdoptante, fechaAdopcion, direccion, id) => {
     return fetch(`http://localhost:3000/perfil/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ categoria, nombre, precio, descripcion }),
+        body: JSON.stringify({ nombreFantasma, nombreAdoptante, fechaAdopcion, direccion }),
     })
     .then(( respuesta) => respuesta)
     .catch((err) => console.log(err));
@@ -36,10 +37,8 @@ const actualizarCliente = ( categoria, nombre, precio, descripcion, id) => {
 
 export const clientServices = {
     listaClientes,
-    crearProducto,
+    crearCliente,
     eliminarCliente,
     detalleCliente,
     actualizarCliente,
 };
-
-

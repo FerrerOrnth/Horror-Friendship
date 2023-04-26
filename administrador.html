@@ -15,6 +15,10 @@
         <link rel="stylesheet" href="css/productos.css">
         <link rel="stylesheet" href="css/login.css">
         <link rel="stylesheet" href="css/administrador.css">
+        <link rel="stylesheet" href="../assets/css/lista_cliente.css" />
+        <link rel="stylesheet" href="../assets/css/componentes/table.css" />
+        <link rel="stylesheet" href="../assets/css/componentes/button.css" />
+        <link rel="stylesheet" href="../assets/css/componentes/modal.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat&family=Emilys+Candy&family=Fredericka+the+Great&family=Luckiest+Guy&family=MedievalSharp&family=RocknRoll+One&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -33,11 +37,6 @@
                     <input class="busqueda-input" type="text" placeholder="¿Que booscas?" data-buscador>
                     <img class="header-ojo" src="images/bleeding-eye-icon-original.svg" alt="ojo">
                 </div> 
-                <!-- <div class="login">
-                    <button class="boton-login" id="boton-administrador" >
-                        <a href="#">Menú administrador</a>
-                    </button>
-                </div> -->
                 <div class="lupa-productos" id="lupa-administrador">
                     <img id="lupa" src="images/bleeding-eye-icon-original.svg" title="Buscar" alt="ojo">
                 </div>
@@ -45,37 +44,20 @@
         </div>
     </header>
     <body>
-        <div class="login-general">
-            <h3 class="iniciar-sesion" id="titulo-administrador" >Agregar entrada</h3>
+        <div class="login-general" id="ancla-agregar">
+            <h3 class="iniciar-sesion" id="titulo-administrador">Agregar registro de adopción</h3>
             <form class="formulario-administrador" id="data-form" dataform>
                 <div class="filas">
-                    <div class="container-input">
-                        <input type="file" name="files" id="files" class="inputfile inputfiles" imagen data-multiple-caption="{count} archivos seleccionados" multiple />
-                        <label for="files">
-                            <figure>
-                                <img src="images/polaroid.png">
-                            </figure>
-                            <span class="texto-imagen">Seleccionar imagen</span>
-                        </label>
-                    </div>
-                </div>  
-                <div class="filas">
-                    <select onfocus='this.size=4;' onblur='this.size=0;' 
-                    onchange='this.size=1; this.blur();' class="fila" id="select" required categoria style="font-family:'MedievalSharp', cursive";/>
-                        <option> Elige una categoría: </option>
-                        <option value="1">Rent a Monster</option>
-                        <option value="2">Adopt a Ghost</option>
-                        <option value="3">Producto individual</option>
-                    </select>
+                    <input type="text" class="fila" id="nombreFantasma-admin" nombreFantasma placeholder="Nombre del fantasma adoptado" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
                 </div>
                 <div class="filas">
-                    <input type="text" class="fila" id="nombre-admin" nombre placeholder="Nombre del producto/servicio/fantasma" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
+                    <input type="text" class="fila" id="nombreAdoptante-admin" nombreAdoptante placeholder="Nombre del humano adoptante" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
                 </div>
                 <div class="filas">
-                    <input type="number" class="fila" precio id="precio" placeholder="Ingrese el precio del producto o servicio. (Vacío si es fantasma)."  min="0" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
+                    <input type="number" class="fila" fechaAdopcion id="fechaAdopcion" placeholder="Ingrese la fecha de adopción del espectro"  min="0" required onfocus="(this.type='date')" style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
                 </div>
                 <div class="filas">
-                    <textarea name="textarea" class="fila" descripcion id="text-area" rows="4" cols="50" placeholder="Descripción del producto/servicio/fantasma" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/></textarea>
+                    <input type="text" class="fila" id="nombreAdoptante-admin" direccion placeholder="Informe el domicilio del adoptante" required style="font-family:'MedievalSharp', cursive" style="font-weight: 900;"/>
                 </div>
                 <div class="filas">
                     <button type="submit" class="entrar" id="agregar-producto">
@@ -84,6 +66,31 @@
                 </div>
             </form>
         </div>
+        <main class="clientes-container">
+            <h3 class="iniciar-sesion" id="titulo-administrador">Registro de adopciones fantasmales</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th class="table__column--p">Fantasma</th>
+                    <th class="table__column--p">Adoptante</th>
+                    <th class="table__column--p">Fecha</th>
+                    <th class="table__column--p">Dirección</th>
+                    <th class="table__column--m table__align--right">
+                        <a
+                        href="#ancla-agregar"
+                        class="simple-button simple-button--add" 
+                        >Nuevo registro</a
+                        >
+                    </th>
+                    </tr>
+                </thead>
+                <tbody data-table>
+
+                </tbody>
+                </table>
+                <div class="modal-container modal--close">
+                </div>
+            </main>
         <footer>
             <div class="footer-general">
                 <div class="logo-footer">
@@ -137,6 +144,7 @@
                 <p>Sitio desarrollado con <i class="fa-solid fa-heart" title="amor"></i> y <i class="fa-solid fa-fire" title="pasión"></i> por Claudio Ferrer Ornth &copy; 2023</p>
             </div>
         </footer> 
+        <script type="module" src="controllers/client.controller.js"></script>
         <script src="js/buscador.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="module" src="controllers/registro.controller.js"></script>          

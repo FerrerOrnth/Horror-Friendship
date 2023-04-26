@@ -4,14 +4,14 @@ const formulario = document.querySelector("[dataform]")
 
 formulario.addEventListener("submit", (evento)=> {
     evento.preventDefault()
-    // const imagen = document.querySelector("[imagen]").value;
-    const categoria = document.querySelector("[categoria]").value;
-    const nombre = document.querySelector("[nombre]").value;
-    const precio = document.querySelector("[precio]").value;
-    const descripcion = document.querySelector("[descripcion]").value;
+    const nombreFantasma = document.querySelector("[nombreFantasma]").value;
+    const nombreAdoptante = document.querySelector("[nombreAdoptante]").value;
+    const fechaAdopcion = document.querySelector("[fechaAdopcion]").value;
+    const direccion = document.querySelector("[direccion]").value;
 
-    console.log(categoria, "-", nombre, "-", precio, "-", descripcion);
-    clientServices.crearProducto(categoria, nombre, precio, descripcion).then( respuesta => {
-        window.location.href = "/administrador.html"
+    clientServices
+        .crearCliente(nombreFantasma, nombreAdoptante, fechaAdopcion, direccion)
+        .then(() => {
+        window.location.href = "registro_completado.html"
     }).catch((err) => console.log(err));
 });

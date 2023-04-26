@@ -1,0 +1,43 @@
+.card {
+  /* background-color: var(--contrast-ligth-color); */
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 45rem;
+  padding: 1.75rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.card__title {
+  font-size: var(--font-size-card-title);
+  margin-bottom: 1rem;
+}
+
+#editar-producto {
+  font-family: 'MedievalSharp', cursive;
+  width: 20%;
+  text-align: center;
+  margin: auto;
+  padding: .5rem;
+}
+
+#editar-producto:hover {
+  color: darkred;
+  border: 1px solid darkred;
+  cursor: pointer;
+}
+
+#titulo-editar {
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+#tarjeta {
+  justify-content: center;
+  align-self: center;
+  margin: 2rem auto;
+
+}
+

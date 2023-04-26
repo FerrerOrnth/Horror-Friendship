@@ -1,0 +1,48 @@
+.button {
+  display: block;
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  width: 100%;
+  max-width: 20rem;
+  box-sizing: border-box;
+  color: var(--contrast-ligth-color);
+  /* font-size: .7rem; */
+  align-self: center;
+  text-align: center;
+}
+
+.simple-button {
+  border: none;
+  background-color: unset;
+  font-family: 'MedievalSharp', cursive;
+}
+
+.simple-button--add {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: .3rem;
+  font-size: 1rem;
+}
+
+.simple-button--add:hover {
+  color: darkred;
+  border: 1px solid darkred;
+}
+
+.simple-button--delete {
+  color: var(--info-color);
+}
+
+.simple-button--delete:hover {
+  color: darkred;
+  cursor: pointer;
+}
+
+.simple-button--edit {
+  color: var(--sucess-color);
+}
+
+.simple-button--edit:hover {
+  color: darkmagenta;
+}

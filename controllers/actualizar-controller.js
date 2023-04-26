@@ -1,44 +1,51 @@
 import { clientServices } from "../service/client-service.js";
 
-const formulario = document.querySelector("[editform]")
+const formulario = document.querySelector("[data-form]")
 
-const obtenerInformacion = () => {
+const obtenerInformacion = async () => {
     const url = new URL(window.location);
-    const id = url.searchParams.get("id"); 
+    const id = url.searchParams.get("id");
 
     if(id === null){
-        console.log("hacer");
+        window.location.href = "error.html";
     }
-    // const imagen = document.querySelector("[editar-imagen]")
-    const categoria = document.querySelector("[editar-categoria]")
-    const nombre = document.querySelector("[editar-nombre]")
-    const precio = document.querySelector("[editar-precio]")
-    const descripcion = document.querySelector("[editar-descripcion]")
+    
+    const nombreFantasma = document.querySelector("[editar-nombreFantasma]")
+    const nombreAdoptante = document.querySelector("[editar-nombreAdoptante]")
+    const fechaAdopcion = document.querySelector("[editar-fechaAdopcion]")
+    const direccion = document.querySelector("[editar-direccion]")
 
-
-clientServices.detalleCliente(id).then((perfil) => {
-    // imagen.value = perfil.imagen;
-    categoria.value = perfil.categoria;
-    nombre.value = perfil.nombre;
-    precio.value = perfil.precio;
-    descripcion.value = perfil.descripcion;
-});
-};
-
-obtenerInformacion();
+    try{    
+        const perfil = await clientServices.detalleCliente(id)
+        if(perfil.nombreFantasma && perfil.nombreAdoptante && perfil.fechaAdopcion && perfil.direccion){
+            nombreFantasma.value = perfil.nombreFantasma;
+            nombreAdoptante.value = perfil.nombreAdoptante;
+            fechaAdopcion.value = perfil.fechaAdopcion;
+            direccion.value = perfil.direccion;
+        }else{
+            throw new Error();
+        }
+    }catch(error){
+        window.location.href = "error.html";
+    } 
+};    
+    
+    obtenerInformacion();
 
 formulario.addEventListener("submit", (evento) => {
     evento.preventDefault();
+
     const url = new URL(window.location);
-    const id = url.searchParams.get("id"); 
+    const id = url.searchParams.get("id");
     
-    // const imagen = document.querySelector("[editar-imagen]").value
-    const categoria = document.querySelector("[editar-categoria]").value;
-    const nombre = document.querySelector("[editar-nombre]").value;
-    const precio = document.querySelector("[editar-precio]").value;
-    const descripcion = document.querySelector("[editar-descripcion]").value;
-    console.log(categoria, nombre, precio, descripcion);
-    clientServices.actualizarCliente(categoria, nombre, precio, descripcion, id).then(() => {
-        window.location.href = "../productos-administrador.html";
-    });
-});
+
+    const nombreFantasma = document.querySelector("[editar-nombreFantasma]").value;
+    const nombreAdoptante = document.querySelector("[editar-nombreAdoptante]").value;
+    const fechaAdopcion = document.querySelector("[editar-fechaAdopcion]").value;
+    const direccion = document.querySelector("[editar-direccion]").value;
+    console.log(nombreFantasma, nombreAdoptante, fechaAdopcion, direccion);
+    clientServices.actualizarCliente(nombreFantasma, nombreAdoptante, fechaAdopcion, direccion, id).then(() => {
+        window.location.href = "edicion_concluida.html";
+        });
+});   
+

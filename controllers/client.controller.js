@@ -1,71 +1,47 @@
-import { clientServices } from "../service/client-service.js"
+import { clientServices } from "../service/client-service.js";
 
-console.log(clientServices);
-
-
-const crearNuevaLinea = ( nombre, precio, id ) => {
-    console.log(id);
-    const linea = document.createElement("div");
-    // linea.classList.add('productos-json');
-    productos.appendChild(producto-json);
-    const contenido = 
-    `<div class="producto-json">
-        <img class="foto-producto" src="">
-        <p class="nombre-producto1">${nombre}</p>
-        <p class="precio-producto">${precio}</p>
-        <a class="ver-producto" href="#">Ver producto</a>   
-    </div>`;
+const crearNuevaLinea = (nombreFantasma, nombreAdoptante, fechaAdopcion, direccion, id) => {
+    const linea = document.createElement("tr");
+    const contenido = `<tr>
+        <td class="td" data-td>${ nombreFantasma }</td>
+        <td>${ nombreAdoptante }</td>
+        <td>${ fechaAdopcion }</td>
+        <td>${ direccion }</td>
+        <td>
+        <ul class="table__button-control">
+            <li>
+                <a href="editar_cliente.html?id=${id}"
+                class="simple-button simple-button--edit"
+                >Editar</a>
+            </li>
+            <li>
+                <button class="simple-button simple-button--delete"
+                    type="button" id="${id}"
+                    >Eliminar
+                </button>
+            </li>
+        </ul>
+        </td>
+    </tr>`;
     linea.innerHTML = contenido;
-    return linea; 
-};
-
-const table = document.querySelector("#grilla-productos");
-
-clientServices.listaClientes().then((data) => {
-    data.forEach(perfil => {
-        console.log(perfil);
-        const nuevaLinea = crearNuevaLinea(perfil.categoria, perfil.nombre, perfil.precio, perfil.descripcion);
-        table.appendChild(nuevaLinea);
-    });
-});
-
-const crearNuevaLinea2 = ( categoria, nombre, precio, descripcion, id ) => {
-    console.log(id);
-    const linea = document.createElement("div");
-    linea.classList.add('productos');
-    const contenido = 
-    `<div class="producto">
-        <img class="foto-producto" src="">
-        <p class="nombre-producto1">${nombre}</p>
-        <p class="precio-producto">${precio}</p>
-        <p class="precio-producto">${id}</p>
-        <a class="ver-producto" href="../editar-producto.html?id=${id}">Editar</a>
-        <button class="boton-eliminar" type="button" id="${id}">
-            Eliminar
-        </button>  
-    </div>`;
-    linea.innerHTML = contenido;
-    const btn = linea.querySelector("button");
+    const btn = linea.querySelector("button")
     btn.addEventListener("click", () => {
-        const id = btn.id;
-        console.log("el click", id);
+        const id = btn.id
         clientServices.eliminarCliente(id).then( respuesta => {
             console.log(respuesta)
-        })
-        
+        }).catch(err => alert("Ocurrió un error"));
     });
-
-    return linea; 
+    return linea;
 };
 
-const table2 = document.querySelector("#grilla-productos2");
+const table = document.querySelector("[data-table]");
 
-clientServices.listaClientes().then((data) => {
-    data.forEach(perfil => {
-        console.log(perfil);
-        const nuevaLinea = crearNuevaLinea2(perfil.categoria, perfil.nombre, perfil.precio, perfil.descripcion, perfil.id);
-        table2.appendChild(nuevaLinea);
+clientServices
+.listaClientes()
+.then((data) => {
+    data.forEach(({nombreFantasma, nombreAdoptante, fechaAdopcion, direccion, id}) => {
+        const nuevaLinea = crearNuevaLinea(nombreFantasma, nombreAdoptante, fechaAdopcion, direccion, id);
+        table.appendChild(nuevaLinea);
     });
-});
+})
 
-// }).catch((error) => alert("Ocurrió un error"));

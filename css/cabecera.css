@@ -61,6 +61,10 @@
     /* font-weight: 300; */
 }
 
+input placeholder {
+    margin-top: -30px;
+}
+
 .header-ojo {
     color: #191919;
     position: absolute;

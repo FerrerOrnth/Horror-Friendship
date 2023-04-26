@@ -1,0 +1,14 @@
+.clientes-container {
+    padding: .5rem 1rem;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* @media(min-width: 1200px) {
+	.clientes-container {
+		padding-left: calc((100vw - 900px)/2);
+		padding-right: calc((100vw - 900px)/2);
+	}
+} */

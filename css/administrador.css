@@ -138,7 +138,21 @@ option:hover {
 }
 
 #agregar-producto {
-    width: 52%;
+    width: 15%;
+    border: 1px solid white;
+    font-family: 'MedievalSharp', cursive;
+    background-color: transparent;
+    vertical-align: center;
+    font-size: 1rem;
+}
+
+#agregar-producto p{
+    font-family: 'MedievalSharp', cursive;
+}
+
+#agregar-producto:hover {
+    border: 1px solid darkred;
+    color: darkred;
 }
 
 #conenlace a {
@@ -151,6 +165,7 @@ option:hover {
     text-decoration: none;
     color: white;
     font-family: 'MedievalSharp', cursive;
+ 
 }
 
 @media (min-width: 320px) and (max-width: 570px) {
@@ -254,8 +269,13 @@ option:hover {
     }
 
     #agregar-producto {
-        width: 89%;
+        width: 80%;
+        /* vertical-align: center; */
     }
+    
+    /* #agregar-producto p{
+        font-size: 1rem;
+    } */
 }
 
 @media (min-width: 570px) and (max-width: 768px) {
@@ -329,7 +349,7 @@ option:hover {
     }
 
     #agregar-producto {
-        width: 93%;
+        width: 70%;
     }
 }
 
@@ -382,11 +402,17 @@ option:hover {
     }
 
     #agregar-producto {
-        width: 83%;
+        width: 50%;
     }
 
     #select {
         width: 70%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+    #agregar-producto {
+        width: 20%;
     }
 }
 

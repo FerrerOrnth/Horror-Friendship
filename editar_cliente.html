@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horror Friendship | Actualizar registros</title>
+    <link rel="icon" type="image/x-icon" href="images/Horror Friendship.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base/base.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/card.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css" />
+  </head>
+  <body>
+    <header class="header container">
+    </header>
+    <main >
+      <section class="card cadastro" id="tarjeta">
+        <h1 class="card__title" id="titulo-editar">Editar registro de adopción fantasmal</h1>
+        <form action="#" class="flex flex--column" data-form>
+          <div class="input-container">
+            <input
+              name="nombreFantasma"
+              id="nombreFantasma"
+              class="input"
+              type="text"
+              placeholder="Nombre del fantasma adoptado"
+              required
+              editar-nombreFantasma
+            />
+            <label class="input-label" for="nombre">Nombre del fantasma</label>
+            <span class="input-menssage-error">Este campo es requerido</span>
+          </div>
+          <div class="input-container">
+            <input
+              name="nombreAdoptante"
+              id="nombreAdoptante"
+              class="input"
+              type="text"
+              placeholder="Nombre del humano adoptante"
+              required
+              editar-nombreAdoptante
+            />
+            <label class="input-label" for="email">Nombre del adoptante</label>
+            <span class="input-menssage-error">Este campo es requerido</span>
+          </div>
+
+          <div class="input-container">
+            <input
+              name="fechaAdopcion"
+              id="fechaAdopcion"
+              class="input"
+              type="text"
+              placeholder="Fecha de adopción"
+              required
+              editar-fechaAdopcion
+            />
+            <label class="input-label" for="email">Fecha de adopción</label>
+            <span class="input-menssage-error">Este campo es requerido</span>
+          </div>
+          <div class="input-container">
+            <input
+              name="direccion"
+              id="direccion"
+              class="input"
+              type="text"
+              placeholder="Domicilio del adoptante"
+              required
+              editar-direccion
+            />
+            <label class="input-label" for="email">Domicilio del adoptante</label>
+            <span class="input-menssage-error">Este campo es requerido</span>
+          </div>
+          <button type="submit" id="editar-producto">Editar cliente</button>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="controllers/actualizar-controller.js"></script>    
+  </body>
+</html>
